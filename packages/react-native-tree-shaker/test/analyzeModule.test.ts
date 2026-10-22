@@ -193,6 +193,16 @@ describe("babel-preset-expo's output, as the minifier leaves it", () => {
     expect(reads(analyzeModule(mod(escapes), [esm]))).toEqual({ 0: 'all' });
   });
 
+  it("recognizes recent Babel's interopRequireWildcard, which redefines itself on first call", () => {
+    const helper =
+      'function c(e,i){if("function"==typeof WeakMap)var l=new WeakMap,t=new WeakMap;return(c=function(e,i){if(!i&&e&&e.__esModule)return e;' +
+      'var n,r,u={__proto__:null,default:e};if(null===e||"object"!=typeof e&&"function"!=typeof e)return u;if(n=i?t:l){if(n.has(e))return n.get(e);n.set(e,u)}' +
+      'for(var s in e)"default"!==s&&{}.hasOwnProperty.call(e,s)&&((r=(n=Object.defineProperty)&&Object.getOwnPropertyDescriptor(e,s))&&(r.get||r.set)?n(u,s,r):u[s]=e[s]);return u})(e,i)}';
+    expect(reads(analyzeModule(mod(`var l=c(r(d[0]));f(l.enableFlag());${helper}`), [esm]))).toEqual({ 0: ['enableFlag'] });
+    // Any other reassignment of the helper still makes its result unknown.
+    expect(reads(analyzeModule(mod(`var l=c(r(d[0]));f(l.x);${helper};c=g`), [esm]))).toEqual({ 0: 'all' });
+  });
+
   it("recognizes its inlined interopRequireWildcard", () => {
     const wildcard =
       'var n=r(d[0]),u=(function(e){if(e&&e.__esModule)return e;var t={};return e&&Object.keys(e).forEach(function(n){if("default"!==n){' +

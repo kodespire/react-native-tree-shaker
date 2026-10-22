@@ -44,6 +44,8 @@ Still open before beta:
 - populate `side-effects-db`, since most React Native libraries don't declare `sideEffects`;
 - measure build time on more apps (shaking itself took 9–15 s on Rocket.Chat and 23–37 s on Expensify, in cold release builds).
 
+What else could shrink bundles, measured: [further-reductions.md](further-reductions.md).
+
 ## Phase 4: more React Native-specific shaking
 
 - Internal export objects, such as `Animated`, which pulls `FlatList` and the virtualized lists into every app that uses `ScrollView`.

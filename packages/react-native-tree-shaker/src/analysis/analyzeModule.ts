@@ -201,7 +201,12 @@ export function createContext(factory: Factory, code: string, dependencies: Read
     }
     if (callee.isIdentifier()) {
       const b = callee.scope.getBinding(callee.node.name);
-      if (!b || b.constantViolations.length > 0) return undefined;
+      if (!b) return undefined;
+      // Recent Babel caches its helper by redefining it on first call: `function c(e){…return (c = function(e){…})(e)}`.
+      const redefinesItself =
+        b.path.isFunctionDeclaration() &&
+        b.constantViolations.every((v) => v.isAssignmentExpression({ operator: '=' }) && v.get('right').isFunctionExpression() && v.findParent((p) => p === b.path) !== null);
+      if (b.constantViolations.length > 0 && !redefinesItself) return undefined;
       if (b.path.isVariableDeclarator() && b.path.node.init) return interopHelper(b.path.get('init') as NodePath, visited);
       if (b.path.isFunctionDeclaration()) return inlinedHelper(b.path);
       return undefined;
