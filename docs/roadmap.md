@@ -15,7 +15,7 @@ Done October 2026: see [phase0-results.md](phase0-results.md). Still open: a rea
 
 `react-native`'s entry file is a CommonJS object of lazy getters (`get View() { return require(...) }`). Getters nobody reads keep their modules in the bundle even though they never run: about 100 KiB on the template.
 
-In `metro-tree-shaker`'s serializer, production builds only:
+In `react-native-tree-shaker`'s serializer, production builds only:
 
 - find which getters the app reads by analyzing every module that imports `react-native`, in Metro's transformed output;
 - drop the modules reachable only through unread getters, and return a source map for the bundle that ships;
@@ -25,7 +25,7 @@ Works with the stock React Native CLI setup and with Expo CLI (through the proje
 
 ## Phase 2: barrel-import rewriting
 
-`@metro-tree-shaker/babel-plugin-optimize-barrels`: rewrite `import { X } from 'big-lib'` to the module that defines `X`, by reading the library's re-exports at build time. It works with any bundler and in development. Its cache key must include the barrel files' contents.
+`@react-native-tree-shaker/babel-plugin-optimize-barrels`: rewrite `import { X } from 'big-lib'` to the module that defines `X`, by reading the library's re-exports at build time. It works with any bundler and in development. Its cache key must include the barrel files' contents.
 
 General shaking now removes unused barrel re-exports from production bundles, so this phase's remaining value is development builds: fewer modules to transform and load in the dev server.
 
@@ -62,4 +62,4 @@ Write an RFC for Metro and share findings with Expo.
 
 ## Support policy
 
-Metro internals change often (0.85–0.87 changed import/export interop and the serializer's source-map format). Real apps lag behind React Native releases, so we support Metro 0.82–0.87 (React Native 0.79–0.88) and run the e2e tests against each minor with `npm run test:metro-versions`. The range is in `packages/metro-tree-shaker/src/metroVersion.ts`.
+Metro internals change often (0.85–0.87 changed import/export interop and the serializer's source-map format). Real apps lag behind React Native releases, so we support Metro 0.82–0.87 (React Native 0.79–0.88) and run the e2e tests against each minor with `npm run test:metro-versions`. The range is in `packages/react-native-tree-shaker/src/metroVersion.ts`.

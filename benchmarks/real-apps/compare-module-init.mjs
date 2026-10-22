@@ -13,7 +13,7 @@ import { createRequire } from 'node:module';
 import path from 'node:path';
 import vm from 'node:vm';
 
-const require = createRequire(path.join(import.meta.dirname, '../../packages/metro-tree-shaker/package.json'));
+const require = createRequire(path.join(import.meta.dirname, '../../packages/react-native-tree-shaker/package.json'));
 const { AnyMap, decodedMappings } = require('@jridgewell/trace-mapping');
 
 const [plainPath, plainMap, shakenPath, shakenMap] = process.argv.slice(2);

@@ -1,6 +1,6 @@
 # Real apps
 
-How the numbers in [docs/real-apps-results.md](../../docs/real-apps-results.md) were produced, and two tools to check `metro-tree-shaker` on any app.
+How the numbers in [docs/real-apps-results.md](../../docs/real-apps-results.md) were produced, and two tools to check `react-native-tree-shaker` on any app.
 
 ## Tools
 
@@ -66,7 +66,7 @@ The repo requires Node 26 and Bun for its install scripts. With Node 24 instead:
 Expensify's standalone app bundles with Re.Pack by default; Metro is used when `BUNDLER=metro` (its hybrid app builds). All builds used `ENVIRONMENT=production ENVFILE=.env.production npx rock bundle --entry-file index.js --platform ios --dev false --minify true --reset-cache`:
 
 - Metro: `BUNDLER=metro`.
-- Metro with `metro-tree-shaker`: also `METRO_TREE_SHAKER=1`, read by the block [`expensify-clone.patch`](../reports/real-apps/expensify-clone.patch) appends to `metro.config.js`. It wraps the final config, including Sentry's serializer.
+- Metro with `react-native-tree-shaker`: also `REACT_NATIVE_TREE_SHAKER=1`, read by the block [`expensify-clone.patch`](../reports/real-apps/expensify-clone.patch) appends to `metro.config.js`. It wraps the final config, including Sentry's serializer.
 - Re.Pack: without `BUNDLER`.
 
 ### Measuring

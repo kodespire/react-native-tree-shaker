@@ -1,4 +1,4 @@
-# metro-tree-shaker
+# react-native-tree-shaker
 
 Tree shaking for React Native's Metro bundler.
 
@@ -7,7 +7,7 @@ Tree shaking for React Native's Metro bundler.
 ```js
 // metro.config.js
 const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
-const { withTreeShaking } = require('metro-tree-shaker');
+const { withTreeShaking } = require('react-native-tree-shaker');
 
 module.exports = withTreeShaking(mergeConfig(getDefaultConfig(__dirname), {}));
 ```
@@ -15,8 +15,8 @@ module.exports = withTreeShaking(mergeConfig(getDefaultConfig(__dirname), {}));
 Each production bundle prints a summary:
 
 ```
-[metro-tree-shaker] react-native getters: 54 of 98 read; removed 48 modules (26.9 KiB).
-[metro-tree-shaker] exports: removed 3057 unused exports and 560 modules, 1212.8 KiB (9.0% of module code), in 8 rounds, 14.3 s. 912 modules' exports couldn't be analyzed.
+[react-native-tree-shaker] react-native getters: 54 of 98 read; removed 48 modules (26.9 KiB).
+[react-native-tree-shaker] exports: removed 3057 unused exports and 560 modules, 1212.8 KiB (9.0% of module code), in 8 rounds, 14.3 s. 912 modules' exports couldn't be analyzed.
 ```
 
 It works on Metro's normal transform output, after Babel. There is no transformer to install, so it works with any Babel config (React Compiler included), keeps Metro's transform cache, and runs the same under the React Native CLI, Rock and Expo CLI.

@@ -1,4 +1,4 @@
-# @metro-tree-shaker/babel-plugin-optimize-barrels
+# @react-native-tree-shaker/babel-plugin-optimize-barrels
 
 > **Stub.** The plugin loads but doesn't rewrite anything yet. This is Phase 2 of the [roadmap](../../docs/roadmap.md).
 
@@ -17,7 +17,7 @@ This works with any bundler and in development, because it only changes import p
 // babel.config.js
 module.exports = {
   presets: ['module:@react-native/babel-preset'],
-  plugins: [['@metro-tree-shaker/optimize-barrels', { packages: ['big-lib'] }]],
+  plugins: [['@react-native-tree-shaker/optimize-barrels', { packages: ['big-lib'] }]],
 };
 ```
 

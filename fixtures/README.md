@@ -1,9 +1,9 @@
 # Fixtures
 
-Each directory is one ESM/CommonJS interop case that the shaker must handle correctly. [`fixtures.test.ts`](fixtures.test.ts) checks that every case is well formed. Every case is also bundled with real Metro plus `metro-tree-shaker`, checked against `expected.json`, and run:
+Each directory is one ESM/CommonJS interop case that the shaker must handle correctly. [`fixtures.test.ts`](fixtures.test.ts) checks that every case is well formed. Every case is also bundled with real Metro plus `react-native-tree-shaker`, checked against `expected.json`, and run:
 
-- Phase 1 cases in [`reactNative.e2e.test.ts`](../packages/metro-tree-shaker/test/reactNative.e2e.test.ts);
-- Phase 3 cases in [`shaking.e2e.test.ts`](../packages/metro-tree-shaker/test/shaking.e2e.test.ts), four ways: Metro's import support and Babel's CommonJS output (`@react-native/babel-preset`), each with and without `inlineRequires`. Each build is compared with plain Metro's: same output when run, and the exports and modules `expected.json` lists.
+- Phase 1 cases in [`reactNative.e2e.test.ts`](../packages/react-native-tree-shaker/test/reactNative.e2e.test.ts);
+- Phase 3 cases in [`shaking.e2e.test.ts`](../packages/react-native-tree-shaker/test/shaking.e2e.test.ts), four ways: Metro's import support and Babel's CommonJS output (`@react-native/babel-preset`), each with and without `inlineRequires`. Each build is compared with plain Metro's: same output when run, and the exports and modules `expected.json` lists.
 
 `node_modules/` directories inside cases are **checked in**. They model real package resolution, and `.gitignore` re-includes them.
 

@@ -1,6 +1,6 @@
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
-import { hasSideEffects, resolveSideEffects, type SideEffectsField } from '@metro-tree-shaker/side-effects-db';
+import { hasSideEffects, resolveSideEffects, type SideEffectsField } from '@react-native-tree-shaker/side-effects-db';
 
 interface PackageInfo {
   root: string;

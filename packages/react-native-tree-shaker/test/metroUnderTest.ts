@@ -8,7 +8,7 @@ const repoRoot = path.resolve(__dirname, '../../..');
  * The Metro the e2e tests build with. By default the repo's own; set
  * METRO_COMPAT_DIR to a directory with another Metro version installed
  * (see scripts/test-metro-versions.mjs, which also copies the fixtures there
- * so that metro-tree-shaker, which loads Metro from the project root, finds
+ * so that react-native-tree-shaker, which loads Metro from the project root, finds
  * that copy).
  */
 export const metroRoot = process.env.METRO_COMPAT_DIR ? path.resolve(process.env.METRO_COMPAT_DIR) : repoRoot;

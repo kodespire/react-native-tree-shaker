@@ -9,7 +9,7 @@ const appRoot = process.env.APP_ROOT;
 const graphOut = process.env.GRAPH_OUT;
 if (!appRoot || !graphOut) throw new Error('Set APP_ROOT and GRAPH_OUT');
 
-const { loadMetroDefaultSerializer } = require('../../packages/metro-tree-shaker/dist/serializer.js');
+const { loadMetroDefaultSerializer } = require('../../packages/react-native-tree-shaker/dist/serializer.js');
 
 module.exports = async (defaultConfig) => {
   const exported = require(path.join(appRoot, 'metro.config.js'));

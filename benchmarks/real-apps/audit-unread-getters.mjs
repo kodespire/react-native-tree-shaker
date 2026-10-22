@@ -1,4 +1,4 @@
-// Safety audit for a shaken bundle: for every getter metro-tree-shaker treated
+// Safety audit for a shaken bundle: for every getter react-native-tree-shaker treated
 // as unread, find that name read as a property inside modules that import
 // react-native's entry (or a module that re-exports it), and show which object
 // it is read from. Any line marked "READ FROM react-native" is a missed read.

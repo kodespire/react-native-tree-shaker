@@ -1,6 +1,6 @@
 # Real apps with many dependencies
 
-October 2026. `metro-tree-shaker` on two large open-source apps, compared with Expo's general shaker, to decide what to build next. How to reproduce: [benchmarks/real-apps](../benchmarks/real-apps). Raw data: [benchmarks/reports/real-apps](../benchmarks/reports/real-apps).
+October 2026. `react-native-tree-shaker` on two large open-source apps, compared with Expo's general shaker, to decide what to build next. How to reproduce: [benchmarks/real-apps](../benchmarks/real-apps). Raw data: [benchmarks/reports/real-apps](../benchmarks/reports/real-apps).
 
 | App | React Native | Metro | Dependencies | JS bundle (iOS) |
 |---|---|---|---:|---:|

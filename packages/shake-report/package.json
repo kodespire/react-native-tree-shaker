@@ -1,5 +1,5 @@
 {
-  "name": "@metro-tree-shaker/shake-report",
+  "name": "@react-native-tree-shaker/shake-report",
   "version": "0.0.0",
   "description": "Measures React Native bundles: raw, gzip, brotli and Hermes bytecode size, module count, and bytes per package.",
   "license": "MIT",

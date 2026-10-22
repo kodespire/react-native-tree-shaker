@@ -1,4 +1,4 @@
-# @metro-tree-shaker/shake-report
+# @react-native-tree-shaker/shake-report
 
 Measures a React Native bundle, and compares two measurements.
 
@@ -27,7 +27,7 @@ Both print Markdown tables, ready to paste into a PR.
 ## API
 
 ```ts
-import { analyzeBundle, diffReports, formatDiff, findHermesc, compileHermes, findDevelopmentCode } from '@metro-tree-shaker/shake-report';
+import { analyzeBundle, diffReports, formatDiff, findHermesc, compileHermes, findDevelopmentCode } from '@react-native-tree-shaker/shake-report';
 ```
 
 `findHermesc(appRoot)` looks in the same places React Native's build scripts use: the CocoaPods `hermes-engine`, the `hermes-compiler` package, then `react-native/sdks/hermesc`.

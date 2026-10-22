@@ -4,8 +4,8 @@
 //   OUT=getters.json npx react-native bundle --config <this file> --entry-file index.js --platform ios --dev false
 const fs = require('node:fs');
 const path = require('node:path');
-const { planGetterShaking } = require('../../packages/metro-tree-shaker');
-const { analyzeEntry } = require('../../packages/metro-tree-shaker/dist/reactNative/analyze.js');
+const { planGetterShaking } = require('../../packages/react-native-tree-shaker');
+const { analyzeEntry } = require('../../packages/react-native-tree-shaker/dist/reactNative/analyze.js');
 
 const exported = require(path.join(process.cwd(), 'metro.config.js'));
 

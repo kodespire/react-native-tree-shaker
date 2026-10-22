@@ -2,7 +2,7 @@
 
 Builds each app with each bundler variant, then records size with [`shake-report`](../packages/shake-report): raw, gzip, brotli, Hermes bytecode, module count, and bytes per package.
 
-Results: [Phase 0](../docs/phase0-results.md) (what existing shakers save) and [Phase 1](../docs/phase1-results.md) (react-native getter shaking). Raw reports are in [`reports/`](reports).
+Results: [Phase 0](../docs/phase0-results.md) (what existing shakers save), [Phase 1](../docs/phase1-results.md) (react-native getter shaking), [real apps](../docs/real-apps-results.md) and [Phase 3](../docs/phase3-results.md) (general shaking). Raw reports are in [`reports/`](reports). They were recorded before the project was renamed, so their logs and configs still say `metro-tree-shaker` and `METRO_TREE_SHAKER`.
 
 ## Phase 0 apps
 
@@ -18,7 +18,7 @@ benchmarks/phase0/setup.sh <apps-dir> [results-dir]
 - `bare-expo-preset`: `rn-template` bundled with Expo's toolchain (`expo`, `expo/metro-config`, `babel-preset-expo`).
 - `bare-expo`: the same without `babel-preset-expo`, a misconfiguration kept for comparison.
 
-The generated config builds every app with stock bundling, with Expo's shaker where it applies, and with `metro-tree-shaker` (`rn-cli-getters`, `expo-getters`, `expo-tree-shaking-getters`). The React Native CLI takes a Metro config path, so `rn-cli-getters` passes [`phase0/with-tree-shaking.metro.config.cjs`](phase0/with-tree-shaking.metro.config.cjs). Expo CLI ignores `--config` for Metro, so `setup.sh` gives each Expo app a `metro.config.js` that applies `withTreeShaking` only when `METRO_TREE_SHAKER=1`.
+The generated config builds every app with stock bundling, with Expo's shaker where it applies, and with `react-native-tree-shaker` (`rn-cli-getters`, `expo-getters`, `expo-tree-shaking-getters`). The React Native CLI takes a Metro config path, so `rn-cli-getters` passes [`phase0/with-tree-shaking.metro.config.cjs`](phase0/with-tree-shaking.metro.config.cjs). Expo CLI ignores `--config` for Metro, so `setup.sh` gives each Expo app a `metro.config.js` that applies `withTreeShaking` only when `REACT_NATIVE_TREE_SHAKER=1`.
 
 Keep `<apps-dir>` outside the repo; the apps need about 2 GB of `node_modules` (less on APFS, where the two bare copies are clones). The script records exact versions in `<apps-dir>/versions.txt`.
 

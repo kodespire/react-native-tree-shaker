@@ -1,5 +1,5 @@
 {
-  "name": "metro-tree-shaker-monorepo",
+  "name": "react-native-tree-shaker-monorepo",
   "private": true,
   "description": "Tree shaking for React Native's Metro bundler.",
   "license": "MIT",

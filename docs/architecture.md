@@ -13,11 +13,11 @@ source (ESM + TS/Flow/JSX)
        __d(function (global, require, …, module, exports) { exports.foo = …; exports.bar = … })
 ```
 
-Shaking needs whole-graph knowledge ("does anything import `bar`?"). Metro only has that in the serializer, after every module is already CommonJS. `metro-tree-shaker` works there anyway: it reads the imports and exports back out of the transformed code.
+Shaking needs whole-graph knowledge ("does anything import `bar`?"). Metro only has that in the serializer, after every module is already CommonJS. `react-native-tree-shaker` works there anyway: it reads the imports and exports back out of the transformed code.
 
 ## React Native getter shaking (Phase 1, shipped)
 
-This removes whole modules and rewrites none. It runs in the serializer on Metro's normal, already-transformed output ([`src/reactNative`](../packages/metro-tree-shaker/src/reactNative)).
+This removes whole modules and rewrites none. It runs in the serializer on Metro's normal, already-transformed output ([`src/reactNative`](../packages/react-native-tree-shaker/src/reactNative)).
 
 1. **Read the getters.** Parse `react-native/index.js`'s output: `__d(function(g,r,i,a,m,e,d){m.exports={get View(){return r(d[13]).default},...}})`. Each `d[N]` inside a getter body is a dependency only that getter needs; any `d[N]` outside a getter is always needed.
 2. **Find reads.** For every module whose dependency map points at the entry, follow each `require(d[N])` (or `importDefault`) through variables, destructuring, inline member access, Babel's lazy-import helper and its `interopRequireDefault`/`interopRequireWildcard` helpers, with Babel scope tracking, because minifiers reuse short names across scopes. A module that sets `module.exports` to the entry (a re-exporting shim) becomes an alias, and its importers' reads count. The factory's parameters are identified by position, because minifiers rename them. `importAll` and anything that lets the object escape (spread, computed key, passing it to a function) count as reading every getter.
@@ -28,7 +28,7 @@ This removes whole modules and rewrites none. It runs in the serializer on Metro
 
 ## General shaking (Phase 3, shipped)
 
-General shaking also runs in the serializer on Metro's normal transform output ([`src/analysis`](../packages/metro-tree-shaker/src/analysis), [`src/shaking`](../packages/metro-tree-shaker/src/shaking)). It installs no transformer. So it works with whatever Babel config the app has (React Compiler, Reanimated's plugin), keeps Metro's per-file transform cache, and behaves the same under the React Native CLI, Rock and Expo CLI. The price is that it has to understand transformed code, and it has to re-minify the modules it changes.
+General shaking also runs in the serializer on Metro's normal transform output ([`src/analysis`](../packages/react-native-tree-shaker/src/analysis), [`src/shaking`](../packages/react-native-tree-shaker/src/shaking)). It installs no transformer. So it works with whatever Babel config the app has (React Compiler, Reanimated's plugin), keeps Metro's per-file transform cache, and behaves the same under the React Native CLI, Rock and Expo CLI. The price is that it has to understand transformed code, and it has to re-minify the modules it changes.
 
 ### 1. Read each module
 

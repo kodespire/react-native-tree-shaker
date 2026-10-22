@@ -26,7 +26,7 @@ export interface MinifierSettings {
 }
 
 /** The source name an edited module's map uses for its input, so it can be traced on to the original file. */
-export const editedSourceName = (modulePath: string) => `${modulePath}?metro-tree-shaker`;
+export const editedSourceName = (modulePath: string) => `${modulePath}?react-native-tree-shaker`;
 
 /**
  * Turns an edited module into Metro module output, the way Metro's transform

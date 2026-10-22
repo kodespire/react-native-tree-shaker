@@ -21,10 +21,10 @@
       "apps": ["rn-template"]
     },
     {
-      "name": "metro-tree-shaker",
-      "description": "Requires the app's metro.config.js to apply withTreeShaking() when METRO_TREE_SHAKER is set.",
+      "name": "react-native-tree-shaker",
+      "description": "Requires the app's metro.config.js to apply withTreeShaking() when REACT_NATIVE_TREE_SHAKER is set.",
       "command": "npx react-native bundle --entry-file {entry} --platform {platform} --dev false --minify true --bundle-output {bundle} --sourcemap-output {map}",
-      "env": { "METRO_TREE_SHAKER": "1" },
+      "env": { "REACT_NATIVE_TREE_SHAKER": "1" },
       "apps": ["rn-template"]
     },
     {

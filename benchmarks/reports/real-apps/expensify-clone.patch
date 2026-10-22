@@ -7,7 +7,7 @@ index de4436a..edff80a 100644
  
  module.exports = isDev ? mergedConfig : withSentryConfig(mergedConfig);
 +
-+// Added for metro-tree-shaker benchmarks.
-+if (process.env.METRO_TREE_SHAKER) {
-+    module.exports = require('<repo>/packages/metro-tree-shaker').withTreeShaking(module.exports);
++// Added for react-native-tree-shaker benchmarks.
++if (process.env.REACT_NATIVE_TREE_SHAKER) {
++    module.exports = require('<repo>/packages/react-native-tree-shaker').withTreeShaking(module.exports);
 +}

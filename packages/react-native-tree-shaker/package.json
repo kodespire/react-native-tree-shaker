@@ -1,12 +1,12 @@
 {
-  "name": "metro-tree-shaker",
+  "name": "react-native-tree-shaker",
   "version": "0.0.0",
   "description": "Tree shaking for React Native's Metro bundler.",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kodespire/react-native-tree-shaker.git",
-    "directory": "packages/metro-tree-shaker"
+    "directory": "packages/react-native-tree-shaker"
   },
   "keywords": [
     "react-native",
@@ -49,7 +49,7 @@
     "@babel/traverse": "^7.29.10",
     "@babel/types": "^7.29.8",
     "@jridgewell/remapping": "^2.3.5",
-    "@metro-tree-shaker/shake-report": "0.0.0",
-    "@metro-tree-shaker/side-effects-db": "0.0.0"
+    "@react-native-tree-shaker/shake-report": "0.0.0",
+    "@react-native-tree-shaker/side-effects-db": "0.0.0"
   }
 }

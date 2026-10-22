@@ -28,10 +28,10 @@ const expoEnv = { CI: '1', EXPO_NO_TELEMETRY: '1' };
 const expoShaking = { EXPO_UNSTABLE_TREE_SHAKING: '1', EXPO_UNSTABLE_METRO_OPTIMIZE_GRAPH: '1' };
 // The React Native CLI takes a Metro config path: the app's config wrapped with
 // withTreeShaking. Quoted: repo paths may contain spaces. Expo CLI ignores
-// --config, so Expo apps' metro.config.js (from setup.sh) reads METRO_TREE_SHAKER.
+// --config, so Expo apps' metro.config.js (from setup.sh) reads REACT_NATIVE_TREE_SHAKER.
 const withShaker = `--config '${path.join(import.meta.dirname, 'with-tree-shaking.metro.config.cjs')}'`;
-const expoWithShaker = { ...expoEnv, METRO_TREE_SHAKER: '1' };
-const gettersOnly = { METRO_TREE_SHAKER_EXPORTS: '0' };
+const expoWithShaker = { ...expoEnv, REACT_NATIVE_TREE_SHAKER: '1' };
+const gettersOnly = { REACT_NATIVE_TREE_SHAKER_EXPORTS: '0' };
 
 const expoApps = ['expo-default', 'expo-barrels', 'bare-expo', 'bare-expo-preset'];
 
@@ -61,34 +61,34 @@ const config = {
     },
     {
       name: 'rn-cli-getters',
-      description: "Stock Metro plus metro-tree-shaker's react-native getter shaking only.",
+      description: "Stock Metro plus react-native-tree-shaker's react-native getter shaking only.",
       command: `npx react-native bundle ${withShaker} ${bundleFlags}`,
       env: gettersOnly,
       apps: ['rn-template'],
     },
     {
       name: 'rn-cli-shaker',
-      description: 'Stock Metro plus metro-tree-shaker: getter shaking and general shaking.',
+      description: 'Stock Metro plus react-native-tree-shaker: getter shaking and general shaking.',
       command: `npx react-native bundle ${withShaker} ${bundleFlags}`,
       apps: ['rn-template'],
     },
     {
       name: 'expo-getters',
-      description: "Expo CLI plus metro-tree-shaker's react-native getter shaking only.",
+      description: "Expo CLI plus react-native-tree-shaker's react-native getter shaking only.",
       command: `npx expo export:embed ${bundleFlags}`,
       env: { ...expoWithShaker, ...gettersOnly },
       apps: expoApps,
     },
     {
       name: 'expo-shaker',
-      description: 'Expo CLI plus metro-tree-shaker: getter shaking and general shaking.',
+      description: 'Expo CLI plus react-native-tree-shaker: getter shaking and general shaking.',
       command: `npx expo export:embed ${bundleFlags}`,
       env: expoWithShaker,
       apps: expoApps,
     },
     {
       name: 'expo-tree-shaking-getters',
-      description: "Expo's tree shaking and metro-tree-shaker together. General shaking steps aside for Expo's.",
+      description: "Expo's tree shaking and react-native-tree-shaker together. General shaking steps aside for Expo's.",
       command: `npx expo export:embed ${bundleFlags}`,
       env: { ...expoWithShaker, ...expoShaking },
       apps: expoApps,

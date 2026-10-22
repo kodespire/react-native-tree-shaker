@@ -6,8 +6,8 @@
 //   OUT=potential.json npx react-native bundle --config <this file> --entry-file index.js --platform ios --dev false --minify true
 const fs = require('node:fs');
 const path = require('node:path');
-const { analyze, computeUsage, esModuleFlags, failed, ALL } = require('../../packages/metro-tree-shaker/dist/shaking/usage.js');
-const { createSideEffectsCheck } = require('../../packages/metro-tree-shaker/dist/shaking/sideEffects.js');
+const { analyze, computeUsage, esModuleFlags, failed, ALL } = require('../../packages/react-native-tree-shaker/dist/shaking/usage.js');
+const { createSideEffectsCheck } = require('../../packages/react-native-tree-shaker/dist/shaking/sideEffects.js');
 
 const exported = require(path.join(process.cwd(), 'metro.config.js'));
 

@@ -1,5 +1,5 @@
 {
-  "name": "@metro-tree-shaker/side-effects-db",
+  "name": "@react-native-tree-shaker/side-effects-db",
   "version": "0.0.0",
   "description": "Resolves package sideEffects for tree shaking, with curated overrides for React Native libraries.",
   "license": "MIT",

@@ -68,7 +68,7 @@ describe('react-native getter shaking', () => {
   it('prints a one-line summary', async () => {
     const log = vi.spyOn(console, 'log').mockImplementation(() => {});
     await build(fixture, (c) => withTreeShaking(c));
-    expect(log).toHaveBeenCalledWith('[metro-tree-shaker] react-native getters: 1 of 2 read; removed 1 modules (0.1 KiB).');
+    expect(log).toHaveBeenCalledWith('[react-native-tree-shaker] react-native getters: 1 of 2 read; removed 1 modules (0.1 KiB).');
     log.mockRestore();
   }, 60_000);
 

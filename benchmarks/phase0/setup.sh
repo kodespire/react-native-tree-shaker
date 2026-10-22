@@ -61,7 +61,7 @@ done
 
 # Expo CLI only reads metro.config.js from the project root (export:embed's
 # --config doesn't apply to Metro), so Expo apps get one that adds
-# metro-tree-shaker when METRO_TREE_SHAKER=1 (METRO_TREE_SHAKER_EXPORTS=0 leaves
+# react-native-tree-shaker when REACT_NATIVE_TREE_SHAKER=1 (REACT_NATIVE_TREE_SHAKER_EXPORTS=0 leaves
 # out general shaking). Without it, this is Expo's default.
 for app in expo-default expo-barrels bare-expo bare-expo-preset; do
   cat > "$app/metro.config.js" <<EOF
@@ -69,9 +69,9 @@ const { getDefaultConfig } = require('expo/metro-config');
 
 const config = getDefaultConfig(__dirname);
 
-module.exports = process.env.METRO_TREE_SHAKER
-  ? require('$REPO_DIR/packages/metro-tree-shaker').withTreeShaking(config, {
-      shakeExports: process.env.METRO_TREE_SHAKER_EXPORTS !== '0',
+module.exports = process.env.REACT_NATIVE_TREE_SHAKER
+  ? require('$REPO_DIR/packages/react-native-tree-shaker').withTreeShaking(config, {
+      shakeExports: process.env.REACT_NATIVE_TREE_SHAKER_EXPORTS !== '0',
     })
   : config;
 EOF

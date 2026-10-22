@@ -1,8 +1,8 @@
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import type { ConfigT } from 'metro-config';
-import { findDevelopmentCode } from '@metro-tree-shaker/shake-report';
-import type { SideEffectsField } from '@metro-tree-shaker/side-effects-db';
+import { findDevelopmentCode } from '@react-native-tree-shaker/shake-report';
+import type { SideEffectsField } from '@react-native-tree-shaker/side-effects-db';
 import { planGetterShaking, type GetterShakingPlan, type GraphModule } from './reactNative/plan';
 import { createFinisher, type JsOutputData, type MinifierSettings } from './shaking/finish';
 import { shakeExports, type InputModule, type ShakeResult } from './shaking/shake';
@@ -55,7 +55,7 @@ export function createTreeShakingSerializer({
     }
     warnAboutDevelopmentCode(graph, log);
     if (options.unstable_inlineDependencyMap || options.dependencyMapReservedName != null) {
-      log('[metro-tree-shaker] Skipped: unstable_inlineDependencyMap and dependencyMapReservedName are not supported.');
+      log('[react-native-tree-shaker] Skipped: unstable_inlineDependencyMap and dependencyMapReservedName are not supported.');
       return next(entryPoint, preModules, graph, options);
     }
     const roots = [...graph.entryPoints, ...options.runBeforeMainModule];
@@ -68,7 +68,7 @@ export function createTreeShakingSerializer({
       if (plan) for (const p of plan.removed) dependencies.delete(p);
     } catch (error) {
       // Never fail a build over an optimization.
-      log(`[metro-tree-shaker] react-native getters: skipped, kept everything. Unexpected error: ${(error as Error).message}`);
+      log(`[react-native-tree-shaker] react-native getters: skipped, kept everything. Unexpected error: ${(error as Error).message}`);
     }
 
     // Phase 3: exports nothing reads, and the code and modules only they needed.
@@ -81,13 +81,13 @@ export function createTreeShakingSerializer({
           minifier: { ...minifier, minify: graph.transformOptions.minify },
         });
         if ('skipped' in shaken) {
-          log(`[metro-tree-shaker] exports: skipped, kept everything. ${shaken.skipped}.`);
+          log(`[react-native-tree-shaker] exports: skipped, kept everything. ${shaken.skipped}.`);
         } else {
           log(describeExports(shaken.result, shaken.removedBytes, shaken.beforeBytes, (performance.now() - started) / 1000));
           if (!shaken.result.failure) dependencies = shaken.dependencies;
         }
       } catch (error) {
-        log(`[metro-tree-shaker] exports: skipped, kept everything. Unexpected error: ${(error as Error).message}`);
+        log(`[react-native-tree-shaker] exports: skipped, kept everything. Unexpected error: ${(error as Error).message}`);
       }
     }
 
@@ -147,9 +147,9 @@ async function shakeGraphExports(
 }
 
 function describeExports(result: ShakeResult, removedBytes: number, beforeBytes: number, seconds: number): string {
-  if (result.failure) return `[metro-tree-shaker] exports: skipped, kept everything. ${result.failure}.`;
+  if (result.failure) return `[react-native-tree-shaker] exports: skipped, kept everything. ${result.failure}.`;
   return (
-    `[metro-tree-shaker] exports: removed ${result.removedExports} unused exports and ${result.removed.size} modules, ` +
+    `[react-native-tree-shaker] exports: removed ${result.removedExports} unused exports and ${result.removed.size} modules, ` +
     `${(removedBytes / 1024).toFixed(1)} KiB (${((removedBytes / beforeBytes) * 100).toFixed(1)}% of module code), in ${result.rounds} rounds, ${seconds.toFixed(1)} s. ` +
     `${result.pinned.length} modules' exports couldn't be analyzed.` +
     (result.unreferenced.length > 0 ? ` ${result.unreferenced.length} modules no code requires were kept as they are.` : '')
@@ -161,7 +161,7 @@ function warnAboutDevelopmentCode(graph: Graph, log: (message: string) => void) 
   if (found.length === 0) return;
   const list = found.map((d) => `${d.label} (${(d.bytes / 1024).toFixed(1)} KiB)`).join(', ');
   log(
-    `[metro-tree-shaker] Warning: this production bundle contains development-only code: ${list}. ` +
+    `[react-native-tree-shaker] Warning: this production bundle contains development-only code: ${list}. ` +
       'Usually process.env.NODE_ENV isn\'t inlined, for example when Expo\'s Metro config is used without babel-preset-expo.',
   );
 }
@@ -171,15 +171,15 @@ const MAX_LISTED_BLOCKERS = 20;
 function describe(plan: GetterShakingPlan, projectRoot: string): string {
   if (plan.skipped) {
     const blockers = plan.skipped.map(({ file, reason }) => `${path.relative(projectRoot, file)} ${reason}.`);
-    if (blockers.length === 1) return `[metro-tree-shaker] react-native getters: skipped, kept everything. ${blockers[0]}`;
+    if (blockers.length === 1) return `[react-native-tree-shaker] react-native getters: skipped, kept everything. ${blockers[0]}`;
     return [
-      `[metro-tree-shaker] react-native getters: skipped, kept everything. ${blockers.length} files use react-native in ways the analysis can't follow:`,
+      `[react-native-tree-shaker] react-native getters: skipped, kept everything. ${blockers.length} files use react-native in ways the analysis can't follow:`,
       ...blockers.slice(0, MAX_LISTED_BLOCKERS).map((b) => `  ${b}`),
       ...(blockers.length > MAX_LISTED_BLOCKERS ? [`  ...and ${blockers.length - MAX_LISTED_BLOCKERS} more.`] : []),
     ].join('\n');
   }
   return (
-    `[metro-tree-shaker] react-native getters: ${plan.keptGetters.length} of ${plan.getterCount} read; ` +
+    `[react-native-tree-shaker] react-native getters: ${plan.keptGetters.length} of ${plan.getterCount} read; ` +
     `removed ${plan.removed.size} modules (${(plan.removedBytes / 1024).toFixed(1)} KiB).`
   );
 }

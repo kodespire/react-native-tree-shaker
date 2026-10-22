@@ -9,7 +9,7 @@ import {
   findHermesc,
   formatDiff,
   type BundleReport,
-} from '@metro-tree-shaker/shake-report';
+} from '@react-native-tree-shaker/shake-report';
 import type { ResolvedConfig } from './config';
 import { planRuns, type PlanFilter, type Run } from './plan';
 

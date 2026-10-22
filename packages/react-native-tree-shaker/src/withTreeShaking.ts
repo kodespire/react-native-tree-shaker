@@ -1,5 +1,5 @@
 import type { InputConfigT } from 'metro-config';
-import type { SideEffectsField } from '@metro-tree-shaker/side-effects-db';
+import type { SideEffectsField } from '@react-native-tree-shaker/side-effects-db';
 import { checkMetroVersion } from './metroVersion';
 import { createTreeShakingSerializer } from './serializer';
 
@@ -53,7 +53,7 @@ export function withTreeShaking<T extends InputConfigT>(config: T, options: Tree
 
   const warning = checkMetroVersion(projectRoot);
   if (warning) {
-    console.warn(`[metro-tree-shaker] ${warning}`);
+    console.warn(`[react-native-tree-shaker] ${warning}`);
   }
 
   // Both kinds of shaking work on Metro's normal transform output, so the

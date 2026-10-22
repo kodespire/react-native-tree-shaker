@@ -1,5 +1,5 @@
 {
-  "name": "@metro-tree-shaker/babel-plugin-optimize-barrels",
+  "name": "@react-native-tree-shaker/babel-plugin-optimize-barrels",
   "version": "0.0.0",
   "description": "Rewrites imports from barrel files to the modules that define them.",
   "license": "MIT",

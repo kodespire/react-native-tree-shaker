@@ -81,7 +81,7 @@ describe('createTreeShakingSerializer', () => {
     const original = vi.fn<CustomSerializer>(async () => 'code');
     const serialize = createTreeShakingSerializer({ original, projectRoot: repoRoot, enabled: true, log });
     await serialize(...args(false, 'node_modules/react/cjs/react.development.js'));
-    expect(log).toHaveBeenCalledWith(expect.stringMatching(/^\[metro-tree-shaker\] Warning: .*react\/cjs\/react\.development\.js/));
+    expect(log).toHaveBeenCalledWith(expect.stringMatching(/^\[react-native-tree-shaker\] Warning: .*react\/cjs\/react\.development\.js/));
 
     log.mockClear();
     await serialize(...args(true, 'node_modules/react/cjs/react.development.js'));

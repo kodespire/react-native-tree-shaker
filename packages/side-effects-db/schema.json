@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "metro-tree-shaker side-effects database",
+  "title": "react-native-tree-shaker side-effects database",
   "type": "object",
   "required": ["packages"],
   "additionalProperties": false,

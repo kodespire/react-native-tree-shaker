@@ -10,7 +10,7 @@ import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import path from 'node:path';
 
-const require = createRequire(path.join(import.meta.dirname, '../../packages/metro-tree-shaker/package.json'));
+const require = createRequire(path.join(import.meta.dirname, '../../packages/react-native-tree-shaker/package.json'));
 const { parse } = require('@babel/parser');
 const traverse = require('@babel/traverse').default;
 const { AnyMap, originalPositionFor } = require('@jridgewell/trace-mapping');

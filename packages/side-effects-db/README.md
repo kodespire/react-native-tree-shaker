@@ -1,4 +1,4 @@
-# @metro-tree-shaker/side-effects-db
+# @react-native-tree-shaker/side-effects-db
 
 Decides whether a module can be dropped when none of its exports are used.
 

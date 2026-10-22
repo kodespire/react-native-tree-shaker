@@ -4,7 +4,7 @@ October 2026. Same apps, versions and method as [Phase 0](phase0-results.md): pr
 
 ## What shipped
 
-`withTreeShaking(config)` now removes modules that are reachable only through getters on `react-native`'s entry object that nothing reads. How it works: [architecture.md](architecture.md#react-native-getter-shaking-phase-1-shipped). Usage and limits: [packages/metro-tree-shaker](../packages/metro-tree-shaker).
+`withTreeShaking(config)` now removes modules that are reachable only through getters on `react-native`'s entry object that nothing reads. How it works: [architecture.md](architecture.md#react-native-getter-shaking-phase-1-shipped). Usage and limits: [packages/react-native-tree-shaker](../packages/react-native-tree-shaker).
 
 ## Results
 
