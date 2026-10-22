@@ -1,0 +1,1 @@
+{ "name": "fixture-reexport-from-side-effect-module", "private": true, "sideEffects": ["./setup.js"] }

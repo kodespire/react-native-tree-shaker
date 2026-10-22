@@ -1,0 +1,8 @@
+{
+  "description": "`export *` over ESM modules is expanded and shaken by usage.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "ui/index.js", "ui/Button.js"], "removed": ["ui/Slider.js"] },
+  "exports": { "ui/Button.js": { "kept": ["Button"], "removed": ["ButtonGroup"] } },
+  "notes": "A shaker that bypasses side-effect-free re-export modules could also remove ui/index.js. Update this expectation if Phase 3 does that."
+}

@@ -1,0 +1,8 @@
+{
+  "description": "A CommonJS module that reads its own exports object (`exports.greet(...)`) could read any export, so none are removed.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "legacy.js"], "removed": [] },
+  "exports": { "legacy.js": { "kept": ["greet", "greetAll", "unused"], "removed": [] } },
+  "output": ["hello a, hello b"]
+}

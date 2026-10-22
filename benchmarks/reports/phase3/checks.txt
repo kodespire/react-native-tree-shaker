@@ -1,0 +1,30 @@
+== rn-template (ios)
+429 modules. 1 reference modules the bundle doesn't define.
+  node_modules/react-native/index.js: 47 missing
+424 modules required in both bundles. 0 failed in both (code that needs a device).
+0 behave differently:
+
+== expo-default (ios)
+1294 modules. 1 reference modules the bundle doesn't define.
+  /node_modules/react-native/index.js: 41 missing
+1286 modules required in both bundles. 0 failed in both (code that needs a device).
+0 behave differently:
+
+== expo-barrels (ios)
+675 modules. 1 reference modules the bundle doesn't define.
+  /node_modules/react-native/index.js: 58 missing
+669 modules required in both bundles. 0 failed in both (code that needs a device).
+0 behave differently:
+
+== bare-expo (ios)
+555 modules. 1 reference modules the bundle doesn't define.
+  /node_modules/react-native/index.js: 38 missing
+544 modules required in both bundles. 5 failed in both (code that needs a device).
+0 behave differently:
+
+== bare-expo-preset (ios)
+404 modules. 1 reference modules the bundle doesn't define.
+  /node_modules/react-native/index.js: 47 missing
+400 modules required in both bundles. 0 failed in both (code that needs a device).
+0 behave differently:
+

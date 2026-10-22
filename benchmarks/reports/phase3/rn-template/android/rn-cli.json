@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "label": "rn-template/android/rn-cli",
+  "bytes": {
+    "raw": 889884,
+    "gzip": 219326,
+    "brotli": 174042,
+    "hermesBytecode": 1260575
+  },
+  "moduleCount": 530,
+  "packages": [
+    {
+      "name": "react-native",
+      "bytes": 686617,
+      "sources": 449
+    },
+    {
+      "name": "(unmapped)",
+      "bytes": 74302,
+      "sources": 0
+    },
+    {
+      "name": "@react-native/virtualized-lists",
+      "bytes": 56197,
+      "sources": 15
+    },
+    {
+      "name": "whatwg-fetch",
+      "bytes": 10027,
+      "sources": 1
+    },
+    {
+      "name": "react",
+      "bytes": 8142,
+      "sources": 4
+    },
+    {
+      "name": "@react-native/normalize-colors",
+      "bytes": 7656,
+      "sources": 1
+    },
+    {
+      "name": "@babel/runtime",
+      "bytes": 7372,
+      "sources": 29
+    },
+    {
+      "name": "@react-native/js-polyfills",
+      "bytes": 7065,
+      "sources": 2
+    },
+    {
+      "name": "regenerator-runtime",
+      "bytes": 6632,
+      "sources": 1
+    },
+    {
+      "name": "@react-native/new-app-screen",
+      "bytes": 5656,
+      "sources": 6
+    },
+    {
+      "name": "react-native-safe-area-context",
+      "bytes": 4314,
+      "sources": 9
+    },
+    {
+      "name": "promise",
+      "bytes": 4296,
+      "sources": 3
+    },
+    {
+      "name": "scheduler",
+      "bytes": 3995,
+      "sources": 2
+    },
+    {
+      "name": "metro-runtime",
+      "bytes": 2104,
+      "sources": 1
+    },
+    {
+      "name": "stacktrace-parser",
+      "bytes": 1822,
+      "sources": 1
+    },
+    {
+      "name": "base64-js",
+      "bytes": 1401,
+      "sources": 1
+    },
+    {
+      "name": "@react-native/asset-utils",
+      "bytes": 730,
+      "sources": 2
+    },
+    {
+      "name": "(app)",
+      "bytes": 540,
+      "sources": 2
+    },
+    {
+      "name": "memoize-one",
+      "bytes": 443,
+      "sources": 1
+    },
+    {
+      "name": "invariant",
+      "bytes": 359,
+      "sources": 1
+    },
+    {
+      "name": "nullthrows",
+      "bytes": 214,
+      "sources": 1
+    }
+  ],
+  "developmentCode": [],
+  "buildMs": 5259
+}

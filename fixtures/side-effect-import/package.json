@@ -1,0 +1,1 @@
+{ "name": "fixture-side-effect-import", "private": true, "sideEffects": ["./polyfill.js"] }

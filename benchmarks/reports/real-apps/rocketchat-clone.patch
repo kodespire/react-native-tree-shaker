@@ -1,0 +1,45 @@
+diff --git a/babel.config.js b/babel.config.js
+index 20b4e24..5cd84a4 100644
+--- a/babel.config.js
++++ b/babel.config.js
+@@ -30,3 +30,12 @@ module.exports = {
+ 		}
+ 	}
+ };
++
++// Added for metro-tree-shaker benchmarks: Expo's transformer loads this config
++// without a filename, which Babel rejects for `exclude` patterns. The override
++// only excludes test files, so apply its plugins everywhere instead.
++if (process.env.USE_EXPO_METRO) {
++	const { overrides, ...rest } = module.exports;
++	const compiler = process.env.NO_REACT_COMPILER ? [] : overrides.flatMap(o => o.plugins);
++	module.exports = { ...rest, plugins: [...rest.plugins, ...compiler] };
++}
+diff --git a/metro.config.js b/metro.config.js
+index bd22faf..eac2b80 100644
+--- a/metro.config.js
++++ b/metro.config.js
+@@ -2,11 +2,13 @@ const path = require('path');
+ const withStorybook = require('@storybook/react-native/metro/withStorybook');
+ 
+ const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
++// Added for metro-tree-shaker benchmarks: measure Expo's Metro config and tree shaking.
++const getConfigFor = process.env.USE_EXPO_METRO ? require('expo/metro-config').getDefaultConfig : getDefaultConfig;
+ const { wrapWithReanimatedMetroConfig } = require('react-native-reanimated/metro-config');
+ 
+ const defaultConfig = getDefaultConfig(__dirname);
+ 
+-const sourceExts = [...defaultConfig.resolver.sourceExts, 'mjs'];
++const sourceExts = [...new Set([...defaultConfig.resolver.sourceExts, 'mjs', ...(process.env.USE_EXPO_METRO ? ['cjs'] : [])])];
+ 
+ const config = {
+ 	transformer: {
+@@ -18,7 +20,7 @@ const config = {
+ 	}
+ };
+ 
+-const finalConfig = wrapWithReanimatedMetroConfig(mergeConfig(getDefaultConfig(__dirname), config));
++const finalConfig = wrapWithReanimatedMetroConfig(mergeConfig(getConfigFor(__dirname), config));
+ 
+ const storybookOptions = {
+ 	// set to false to disable storybook specific settings

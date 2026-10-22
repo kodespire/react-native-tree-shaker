@@ -1,0 +1,7 @@
+{
+  "description": "A named export nobody imports is removed.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "math.js"], "removed": [] },
+  "exports": { "math.js": { "kept": ["used"], "removed": ["unused"] } }
+}

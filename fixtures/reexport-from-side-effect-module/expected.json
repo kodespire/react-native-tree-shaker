@@ -1,0 +1,65 @@
+{
+  "description": "Unread re-exports go. The module they came from stays if it has side effects, and goes if it doesn't.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": {
+    "kept": [
+      "index.js",
+      "lib.js",
+      "setup.js"
+    ],
+    "removed": [
+      "pure.js"
+    ]
+  },
+  "exports": {
+    "lib.js": {
+      "kept": [
+        "version"
+      ],
+      "removed": [
+        "configure",
+        "helper"
+      ]
+    },
+    "setup.js": {
+      "kept": [],
+      "removed": [
+        "configure"
+      ]
+    }
+  },
+  "output": [
+    "setup ran",
+    "1.0"
+  ],
+  "overrides": {
+    "babel+inlineRequires": {
+      "modules": {
+        "kept": [
+          "index.js",
+          "lib.js"
+        ],
+        "removed": [
+          "setup.js",
+          "pure.js"
+        ]
+      },
+      "exports": {
+        "lib.js": {
+          "kept": [
+            "version"
+          ],
+          "removed": [
+            "configure",
+            "helper"
+          ]
+        }
+      },
+      "output": [
+        "1.0"
+      ]
+    }
+  },
+  "notes": "With Babel and inline requires, the re-export getter is the only place setup.js is required, so plain Metro never runs it either, and removing it changes nothing."
+}

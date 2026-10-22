@@ -1,0 +1,102 @@
+▶ rn-template/ios/rn-cli
+▶ rn-template/ios/rn-cli-getters
+[metro-tree-shaker] react-native getters: 16 of 96 read; removed 100 modules (106.6 KiB).
+▶ rn-template/ios/rn-cli-shaker
+[metro-tree-shaker] react-native getters: 16 of 96 read; removed 100 modules (106.6 KiB).
+[metro-tree-shaker] exports: removed 121 unused exports and 5 modules, 16.5 KiB (2.2% of module code), in 3 rounds, 1.1 s. 50 modules' exports couldn't be analyzed.
+▶ rn-template/android/rn-cli
+▶ rn-template/android/rn-cli-getters
+[metro-tree-shaker] react-native getters: 16 of 96 read; removed 97 modules (107.6 KiB).
+▶ rn-template/android/rn-cli-shaker
+[metro-tree-shaker] react-native getters: 16 of 96 read; removed 97 modules (107.6 KiB).
+[metro-tree-shaker] exports: removed 112 unused exports and 5 modules, 15.5 KiB (2.1% of module code), in 2 rounds, 0.9 s. 50 modules' exports couldn't be analyzed.
+▶ expo-default/ios/expo
+▶ expo-default/ios/expo-tree-shaking
+▶ expo-default/ios/expo-getters
+[metro-tree-shaker] react-native getters: 38 of 96 read; removed 81 modules (77.7 KiB).
+▶ expo-default/ios/expo-shaker
+[metro-tree-shaker] react-native getters: 38 of 96 read; removed 81 modules (77.7 KiB).
+[metro-tree-shaker] exports: removed 843 unused exports and 170 modules, 382.5 KiB (17.3% of module code), in 7 rounds, 3.3 s. 225 modules' exports couldn't be analyzed.
+[metro-tree-shaker] exports: removed 1002 unused exports and 256 modules, 678.8 KiB (34.6% of module code), in 8 rounds, 5.3 s. 246 modules' exports couldn't be analyzed. 1 modules no code requires were kept as they are.
+▶ expo-default/ios/expo-tree-shaking-getters
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+[metro-tree-shaker] exports: skipped, kept everything. 1521 modules aren't Metro module definitions yet, as when Expo's own tree shaking is on.
+[metro-tree-shaker] exports: removed 1002 unused exports and 256 modules, 678.8 KiB (34.6% of module code), in 8 rounds, 5.0 s. 246 modules' exports couldn't be analyzed. 1 modules no code requires were kept as they are.
+▶ expo-default/android/expo
+▶ expo-default/android/expo-tree-shaking
+▶ expo-default/android/expo-getters
+[metro-tree-shaker] react-native getters: 39 of 96 read; removed 78 modules (78.2 KiB).
+▶ expo-default/android/expo-shaker
+[metro-tree-shaker] react-native getters: 39 of 96 read; removed 78 modules (78.2 KiB).
+[metro-tree-shaker] exports: removed 847 unused exports and 166 modules, 382.5 KiB (16.2% of module code), in 7 rounds, 3.5 s. 228 modules' exports couldn't be analyzed.
+[metro-tree-shaker] exports: removed 1002 unused exports and 256 modules, 678.8 KiB (34.6% of module code), in 8 rounds, 5.3 s. 246 modules' exports couldn't be analyzed. 1 modules no code requires were kept as they are.
+▶ expo-default/android/expo-tree-shaking-getters
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+[metro-tree-shaker] exports: skipped, kept everything. 1614 modules aren't Metro module definitions yet, as when Expo's own tree shaking is on.
+[metro-tree-shaker] exports: removed 1002 unused exports and 256 modules, 678.8 KiB (34.6% of module code), in 8 rounds, 6.0 s. 246 modules' exports couldn't be analyzed. 1 modules no code requires were kept as they are.
+▶ expo-barrels/ios/expo
+▶ expo-barrels/ios/expo-tree-shaking
+▶ expo-barrels/ios/expo-getters
+[metro-tree-shaker] react-native getters: 21 of 96 read; removed 195 modules (257.6 KiB).
+▶ expo-barrels/ios/expo-shaker
+[metro-tree-shaker] react-native getters: 21 of 96 read; removed 195 modules (257.6 KiB).
+[metro-tree-shaker] exports: removed 11688 unused exports and 2717 modules, 2270.1 KiB (74.4% of module code), in 5 rounds, 11.3 s. 28 modules' exports couldn't be analyzed.
+▶ expo-barrels/ios/expo-tree-shaking-getters
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+[metro-tree-shaker] exports: skipped, kept everything. 3587 modules aren't Metro module definitions yet, as when Expo's own tree shaking is on.
+▶ expo-barrels/android/expo
+▶ expo-barrels/android/expo-tree-shaking
+▶ expo-barrels/android/expo-getters
+[metro-tree-shaker] react-native getters: 21 of 96 read; removed 192 modules (259.8 KiB).
+▶ expo-barrels/android/expo-shaker
+[metro-tree-shaker] react-native getters: 21 of 96 read; removed 192 modules (259.8 KiB).
+[metro-tree-shaker] exports: removed 11681 unused exports and 2717 modules, 2269.7 KiB (74.3% of module code), in 5 rounds, 9.8 s. 28 modules' exports couldn't be analyzed.
+▶ expo-barrels/android/expo-tree-shaking-getters
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+[metro-tree-shaker] exports: skipped, kept everything. 3586 modules aren't Metro module definitions yet, as when Expo's own tree shaking is on.
+▶ bare-expo/ios/expo
+▶ bare-expo/ios/expo-tree-shaking
+▶ bare-expo/ios/expo-getters
+[metro-tree-shaker] Warning: this production bundle contains development-only code: react-devtools-core (185.8 KiB), react/cjs/react.development.js (20.7 KiB), react/cjs/react-jsx-runtime.development.js (5.7 KiB), scheduler/cjs/scheduler.native.development.js (4.2 KiB), react-is/cjs/react-is.development.js (2.4 KiB). Usually process.env.NODE_ENV isn't inlined, for example when Expo's Metro config is used without babel-preset-expo.
+[metro-tree-shaker] react-native getters: 19 of 96 read; removed 75 modules (91.1 KiB).
+▶ bare-expo/ios/expo-shaker
+[metro-tree-shaker] Warning: this production bundle contains development-only code: react-devtools-core (185.8 KiB), react/cjs/react.development.js (20.7 KiB), react/cjs/react-jsx-runtime.development.js (5.7 KiB), scheduler/cjs/scheduler.native.development.js (4.2 KiB), react-is/cjs/react-is.development.js (2.4 KiB). Usually process.env.NODE_ENV isn't inlined, for example when Expo's Metro config is used without babel-preset-expo.
+[metro-tree-shaker] react-native getters: 19 of 96 read; removed 75 modules (91.1 KiB).
+[metro-tree-shaker] exports: removed 173 unused exports and 5 modules, 18.6 KiB (1.4% of module code), in 1 rounds, 1.4 s. 53 modules' exports couldn't be analyzed.
+▶ bare-expo/ios/expo-tree-shaking-getters
+[metro-tree-shaker] Warning: this production bundle contains development-only code: react-devtools-core (186.1 KiB), react/cjs/react.development.js (20.9 KiB), react/cjs/react-jsx-runtime.development.js (5.7 KiB), scheduler/cjs/scheduler.native.development.js (4.2 KiB), react-is/cjs/react-is.development.js (2.5 KiB). Usually process.env.NODE_ENV isn't inlined, for example when Expo's Metro config is used without babel-preset-expo.
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+[metro-tree-shaker] exports: skipped, kept everything. 627 modules aren't Metro module definitions yet, as when Expo's own tree shaking is on.
+▶ bare-expo/android/expo
+▶ bare-expo/android/expo-tree-shaking
+▶ bare-expo/android/expo-getters
+[metro-tree-shaker] Warning: this production bundle contains development-only code: react-devtools-core (185.8 KiB), react/cjs/react.development.js (20.7 KiB), react/cjs/react-jsx-runtime.development.js (5.7 KiB), scheduler/cjs/scheduler.native.development.js (4.2 KiB), react-is/cjs/react-is.development.js (2.4 KiB). Usually process.env.NODE_ENV isn't inlined, for example when Expo's Metro config is used without babel-preset-expo.
+[metro-tree-shaker] react-native getters: 19 of 96 read; removed 82 modules (98.6 KiB).
+▶ bare-expo/android/expo-shaker
+[metro-tree-shaker] Warning: this production bundle contains development-only code: react-devtools-core (185.8 KiB), react/cjs/react.development.js (20.7 KiB), react/cjs/react-jsx-runtime.development.js (5.7 KiB), scheduler/cjs/scheduler.native.development.js (4.2 KiB), react-is/cjs/react-is.development.js (2.4 KiB). Usually process.env.NODE_ENV isn't inlined, for example when Expo's Metro config is used without babel-preset-expo.
+[metro-tree-shaker] react-native getters: 19 of 96 read; removed 82 modules (98.6 KiB).
+[metro-tree-shaker] exports: removed 168 unused exports and 5 modules, 17.7 KiB (1.3% of module code), in 1 rounds, 1.4 s. 53 modules' exports couldn't be analyzed.
+▶ bare-expo/android/expo-tree-shaking-getters
+[metro-tree-shaker] Warning: this production bundle contains development-only code: react-devtools-core (186.1 KiB), react/cjs/react.development.js (20.9 KiB), react/cjs/react-jsx-runtime.development.js (5.7 KiB), scheduler/cjs/scheduler.native.development.js (4.2 KiB), react-is/cjs/react-is.development.js (2.5 KiB). Usually process.env.NODE_ENV isn't inlined, for example when Expo's Metro config is used without babel-preset-expo.
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+[metro-tree-shaker] exports: skipped, kept everything. 631 modules aren't Metro module definitions yet, as when Expo's own tree shaking is on.
+▶ bare-expo-preset/ios/expo
+▶ bare-expo-preset/ios/expo-tree-shaking
+▶ bare-expo-preset/ios/expo-getters
+[metro-tree-shaker] react-native getters: 16 of 96 read; removed 101 modules (90.9 KiB).
+▶ bare-expo-preset/ios/expo-shaker
+[metro-tree-shaker] react-native getters: 16 of 96 read; removed 101 modules (90.9 KiB).
+[metro-tree-shaker] exports: removed 136 unused exports and 5 modules, 20.1 KiB (3.0% of module code), in 3 rounds, 0.8 s. 21 modules' exports couldn't be analyzed.
+▶ bare-expo-preset/ios/expo-tree-shaking-getters
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+[metro-tree-shaker] exports: skipped, kept everything. 507 modules aren't Metro module definitions yet, as when Expo's own tree shaking is on.
+▶ bare-expo-preset/android/expo
+▶ bare-expo-preset/android/expo-tree-shaking
+▶ bare-expo-preset/android/expo-getters
+[metro-tree-shaker] react-native getters: 16 of 96 read; removed 98 modules (91.7 KiB).
+▶ bare-expo-preset/android/expo-shaker
+[metro-tree-shaker] react-native getters: 16 of 96 read; removed 98 modules (91.7 KiB).
+[metro-tree-shaker] exports: removed 128 unused exports and 5 modules, 18.7 KiB (2.8% of module code), in 2 rounds, 0.8 s. 21 modules' exports couldn't be analyzed.
+▶ bare-expo-preset/android/expo-tree-shaking-getters
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+[metro-tree-shaker] exports: skipped, kept everything. 505 modules aren't Metro module definitions yet, as when Expo's own tree shaking is on.

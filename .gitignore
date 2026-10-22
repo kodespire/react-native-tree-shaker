@@ -1,0 +1,15 @@
+node_modules/
+# Fixtures model real package resolution, so their node_modules are source.
+!fixtures/**/node_modules/
+
+dist/
+*.tsbuildinfo
+coverage/
+.DS_Store
+
+benchmarks/results/*
+!benchmarks/results/.gitkeep
+benchmarks/bench.config.json
+
+# Metro versions installed by scripts/test-metro-versions.mjs
+.metro-compat/

@@ -1,0 +1,92 @@
+{
+  "outDir": "<results-dir>",
+  "apps": [
+    {
+      "name": "rn-template",
+      "root": "<apps-dir>/rn-template",
+      "entry": "index.js",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "name": "expo-default",
+      "root": "<apps-dir>/expo-default",
+      "entry": "node_modules/expo-router/entry.js",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "name": "expo-barrels",
+      "root": "<apps-dir>/expo-barrels",
+      "entry": "index.ts",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "name": "bare-expo",
+      "root": "<apps-dir>/bare-expo",
+      "entry": "index.js",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "name": "bare-expo-preset",
+      "root": "<apps-dir>/bare-expo-preset",
+      "entry": "index.js",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "name": "rn-cli",
+      "description": "Stock Metro through the React Native CLI.",
+      "command": "npx react-native bundle --entry-file {entry} --platform {platform} --dev false --minify true --reset-cache --bundle-output {bundle} --sourcemap-output {map}",
+      "apps": [
+        "rn-template"
+      ]
+    },
+    {
+      "name": "expo",
+      "description": "Expo CLI, tree shaking off. This is the command native Expo builds run.",
+      "command": "npx expo export:embed --entry-file {entry} --platform {platform} --dev false --minify true --reset-cache --bundle-output {bundle} --sourcemap-output {map}",
+      "env": {
+        "CI": "1",
+        "EXPO_NO_TELEMETRY": "1"
+      },
+      "apps": [
+        "expo-default",
+        "expo-barrels",
+        "bare-expo",
+        "bare-expo-preset"
+      ]
+    },
+    {
+      "name": "expo-tree-shaking",
+      "description": "Expo CLI with Expo's experimental tree shaking.",
+      "command": "npx expo export:embed --entry-file {entry} --platform {platform} --dev false --minify true --reset-cache --bundle-output {bundle} --sourcemap-output {map}",
+      "env": {
+        "CI": "1",
+        "EXPO_NO_TELEMETRY": "1",
+        "EXPO_UNSTABLE_TREE_SHAKING": "1",
+        "EXPO_UNSTABLE_METRO_OPTIMIZE_GRAPH": "1"
+      },
+      "apps": [
+        "expo-default",
+        "expo-barrels",
+        "bare-expo",
+        "bare-expo-preset"
+      ]
+    }
+  ]
+}

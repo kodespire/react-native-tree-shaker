@@ -1,0 +1,7 @@
+{
+  "description": "`export { default as X } from` re-exports are shaken like named ones.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "components/index.js", "components/Button.js"], "removed": ["components/Unused.js"] },
+  "exports": { "components/index.js": { "kept": ["Button"], "removed": ["Unused"] } }
+}

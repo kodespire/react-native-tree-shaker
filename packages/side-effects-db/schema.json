@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "metro-tree-shaker side-effects database",
+  "type": "object",
+  "required": ["packages"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "packages": {
+      "type": "object",
+      "description": "Keyed by npm package name. Each package lists entries for different version ranges; the first matching entry wins.",
+      "additionalProperties": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": ["sideEffects", "versions", "evidence"],
+          "additionalProperties": false,
+          "properties": {
+            "sideEffects": {
+              "description": "Same meaning as the package.json field: false, true, or globs of files that have side effects.",
+              "oneOf": [
+                { "type": "boolean" },
+                { "type": "array", "items": { "type": "string" } }
+              ]
+            },
+            "versions": {
+              "type": "string",
+              "description": "Semver range of package versions this entry applies to."
+            },
+            "evidence": {
+              "type": "string",
+              "format": "uri",
+              "description": "Link to the package source or a maintainer statement that supports this entry."
+            }
+          }
+        }
+      }
+    }
+  }
+}

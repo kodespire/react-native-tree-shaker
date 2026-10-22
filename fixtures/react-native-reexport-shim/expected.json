@@ -1,0 +1,16 @@
+{
+  "description": "A module that re-exports react-native (module.exports = require('react-native')) passes its importers' reads through, so unread getters are still removed.",
+  "phase": 1,
+  "entry": "index.js",
+  "modules": {
+    "kept": [
+      "index.js",
+      "rn-shim.js",
+      "node_modules/react-native/index.js",
+      "node_modules/react-native/Libraries/View.js"
+    ],
+    "removed": ["node_modules/react-native/Libraries/ToastAndroid.js"]
+  },
+  "exports": {},
+  "output": ["View"]
+}

@@ -1,0 +1,16 @@
+{
+  "description": "A namespace import of react-native copies every property, which runs every getter, so nothing is removed.",
+  "phase": 1,
+  "entry": "index.js",
+  "modules": {
+    "kept": [
+      "index.js",
+      "node_modules/react-native/index.js",
+      "node_modules/react-native/Libraries/View.js",
+      "node_modules/react-native/Libraries/ToastAndroid.js"
+    ],
+    "removed": []
+  },
+  "exports": {},
+  "output": ["View"]
+}

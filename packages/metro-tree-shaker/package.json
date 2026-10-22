@@ -1,0 +1,55 @@
+{
+  "name": "metro-tree-shaker",
+  "version": "0.0.0",
+  "description": "Tree shaking for React Native's Metro bundler.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kodespire/react-native-tree-shaker.git",
+    "directory": "packages/metro-tree-shaker"
+  },
+  "keywords": [
+    "react-native",
+    "metro",
+    "tree-shaking",
+    "bundle-size"
+  ],
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20.19"
+  },
+  "peerDependencies": {
+    "metro": ">=0.82.0 <0.88.0",
+    "metro-config": ">=0.82.0 <0.88.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.29.10",
+    "@react-native/babel-preset": "^0.88.0",
+    "@react-native/metro-babel-transformer": "^0.88.0",
+    "@types/babel__generator": "^7.27.0",
+    "@types/babel__traverse": "^7.28.0",
+    "metro": "0.87.1",
+    "metro-config": "0.87.1"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.29.8",
+    "@babel/parser": "^7.29.9",
+    "@babel/traverse": "^7.29.10",
+    "@babel/types": "^7.29.8",
+    "@jridgewell/remapping": "^2.3.5",
+    "@metro-tree-shaker/shake-report": "0.0.0",
+    "@metro-tree-shaker/side-effects-db": "0.0.0"
+  }
+}

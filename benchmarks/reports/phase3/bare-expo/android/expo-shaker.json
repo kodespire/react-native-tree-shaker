@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "label": "bare-expo/android/expo-shaker",
+  "bytes": {
+    "raw": 1441676,
+    "gzip": 392695,
+    "brotli": 294209,
+    "hermesBytecode": 2092028
+  },
+  "moduleCount": 552,
+  "packages": [
+    {
+      "name": "react-native",
+      "bytes": 916375,
+      "sources": 454
+    },
+    {
+      "name": "react-devtools-core",
+      "bytes": 189603,
+      "sources": 1
+    },
+    {
+      "name": "expo",
+      "bytes": 68426,
+      "sources": 7
+    },
+    {
+      "name": "(unmapped)",
+      "bytes": 67728,
+      "sources": 0
+    },
+    {
+      "name": "@react-native/virtualized-lists",
+      "bytes": 52699,
+      "sources": 15
+    },
+    {
+      "name": "react",
+      "bytes": 34781,
+      "sources": 6
+    },
+    {
+      "name": "pretty-format",
+      "bytes": 14610,
+      "sources": 10
+    },
+    {
+      "name": "whatwg-fetch",
+      "bytes": 10027,
+      "sources": 1
+    },
+    {
+      "name": "@expo/cli",
+      "bytes": 8763,
+      "sources": 1
+    },
+    {
+      "name": "@react-native/normalize-colors",
+      "bytes": 7656,
+      "sources": 1
+    },
+    {
+      "name": "scheduler",
+      "bytes": 7541,
+      "sources": 3
+    },
+    {
+      "name": "@react-native/js-polyfills",
+      "bytes": 7463,
+      "sources": 2
+    },
+    {
+      "name": "regenerator-runtime",
+      "bytes": 6632,
+      "sources": 1
+    },
+    {
+      "name": "anser",
+      "bytes": 5898,
+      "sources": 1
+    },
+    {
+      "name": "@react-native/new-app-screen",
+      "bytes": 5707,
+      "sources": 6
+    },
+    {
+      "name": "metro-runtime",
+      "bytes": 5322,
+      "sources": 2
+    },
+    {
+      "name": "promise",
+      "bytes": 5276,
+      "sources": 4
+    },
+    {
+      "name": "@expo/log-box-utils",
+      "bytes": 5002,
+      "sources": 4
+    },
+    {
+      "name": "react-refresh",
+      "bytes": 4873,
+      "sources": 3
+    },
+    {
+      "name": "@babel/runtime",
+      "bytes": 3388,
+      "sources": 14
+    },
+    {
+      "name": "ansi-styles",
+      "bytes": 3166,
+      "sources": 1
+    },
+    {
+      "name": "react-is",
+      "bytes": 2342,
+      "sources": 3
+    },
+    {
+      "name": "react-native-safe-area-context",
+      "bytes": 2109,
+      "sources": 4
+    },
+    {
+      "name": "stacktrace-parser",
+      "bytes": 1822,
+      "sources": 1
+    },
+    {
+      "name": "base64-js",
+      "bytes": 1331,
+      "sources": 1
+    },
+    {
+      "name": "(app)",
+      "bytes": 967,
+      "sources": 3
+    },
+    {
+      "name": "@react-native/asset-utils",
+      "bytes": 730,
+      "sources": 2
+    },
+    {
+      "name": "invariant",
+      "bytes": 474,
+      "sources": 1
+    },
+    {
+      "name": "memoize-one",
+      "bytes": 443,
+      "sources": 1
+    },
+    {
+      "name": "ansi-regex",
+      "bytes": 288,
+      "sources": 1
+    },
+    {
+      "name": "nullthrows",
+      "bytes": 214,
+      "sources": 1
+    },
+    {
+      "name": "@expo/metro",
+      "bytes": 20,
+      "sources": 1
+    }
+  ],
+  "developmentCode": [
+    {
+      "label": "react-devtools-core",
+      "files": 1,
+      "bytes": 189603
+    },
+    {
+      "label": "react/cjs/react.development.js",
+      "files": 1,
+      "bytes": 20962
+    },
+    {
+      "label": "react/cjs/react-jsx-runtime.development.js",
+      "files": 1,
+      "bytes": 5569
+    },
+    {
+      "label": "scheduler/cjs/scheduler.native.development.js",
+      "files": 1,
+      "bytes": 3751
+    },
+    {
+      "label": "react-is/cjs/react-is.development.js",
+      "files": 1,
+      "bytes": 1160
+    }
+  ],
+  "buildMs": 2579
+}

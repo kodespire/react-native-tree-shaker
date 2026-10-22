@@ -1,0 +1,12 @@
+{
+  "description": "Usage is traced through a chain of named re-exports; unused names are removed at every hop.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "a.js", "b.js", "c.js"], "removed": [] },
+  "exports": {
+    "a.js": { "kept": ["deep"], "removed": ["other"] },
+    "b.js": { "kept": ["deep"], "removed": ["other"] },
+    "c.js": { "kept": ["deep"], "removed": ["unusedC"] }
+  },
+  "notes": "Bypassing a.js and b.js entirely would also be correct. Update this expectation if Phase 3 does that."
+}

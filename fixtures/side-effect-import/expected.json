@@ -1,0 +1,7 @@
+{
+  "description": "A bare import of a module listed in sideEffects is kept even though it has no exports.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "polyfill.js"], "removed": [] },
+  "exports": {}
+}

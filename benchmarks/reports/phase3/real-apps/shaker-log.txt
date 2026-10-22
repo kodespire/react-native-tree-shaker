@@ -1,0 +1,12 @@
+rocketchat (react-native bundle, stock config, cold cache):
+[metro-tree-shaker] react-native getters: 54 of 98 read; removed 48 modules (26.9 KiB).
+[metro-tree-shaker] exports: removed 3057 unused exports and 560 modules, 1212.8 KiB (9.0% of module code), in 8 rounds, 14.7 s. 911 modules' exports couldn't be analyzed.
+with: real 48.72, without: real 38.15
+
+expensify (rock bundle, BUNDLER=metro, production env, cold cache):
+[metro-tree-shaker] Warning: this production bundle contains development-only code: react-reconciler/cjs/react-reconciler.development.js (195.0 KiB), react-devtools-core (184.8 KiB), react/cjs/react.development.js (20.0 KiB), scheduler/cjs/scheduler.native.development.js (8.5 KiB), react-is/cjs/react-is.development.js (6.7 KiB), react/cjs/react-jsx-runtime.development.js (5.5 KiB), react/cjs/react-compiler-runtime.development.js (0.9 KiB), react-reconciler/cjs/react-reconciler-constants.development.js (0.5 KiB). Usually process.env.NODE_ENV isn't inlined, for example when Expo's Metro config is used without babel-preset-expo.
+[metro-tree-shaker] react-native getters: 54 of 98 read; removed 39 modules (36.6 KiB).
+[metro-tree-shaker] exports: removed 5539 unused exports and 625 modules, 1322.9 KiB (3.3% of module code), in 9 rounds, 37.2 s. 1918 modules' exports couldn't be analyzed. 1 modules no code requires were kept as they are.
+with: real 158.10, without: real 105.94
+
+Build times varied between runs on this machine (other load); an earlier run on an idle machine, before the second minifier pass: rocketchat 16.7 s without, 28.0 s with; expensify 44.7 s without, 71.5 s with.

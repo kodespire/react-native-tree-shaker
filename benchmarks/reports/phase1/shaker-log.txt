@@ -1,0 +1,36 @@
+▶ rn-template/ios/rn-cli-getters
+[metro-tree-shaker] react-native getters: 16 of 96 read; removed 100 modules (106.6 KiB).
+▶ rn-template/android/rn-cli-getters
+[metro-tree-shaker] react-native getters: 16 of 96 read; removed 97 modules (107.6 KiB).
+▶ expo-default/ios/expo-getters
+[metro-tree-shaker] react-native getters: 38 of 96 read; removed 81 modules (77.7 KiB).
+▶ expo-default/ios/expo-tree-shaking-getters
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+▶ expo-default/android/expo-getters
+[metro-tree-shaker] react-native getters: 39 of 96 read; removed 78 modules (78.2 KiB).
+▶ expo-default/android/expo-tree-shaking-getters
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+▶ expo-barrels/ios/expo-getters
+[metro-tree-shaker] react-native getters: 21 of 96 read; removed 195 modules (257.6 KiB).
+▶ expo-barrels/ios/expo-tree-shaking-getters
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+▶ expo-barrels/android/expo-getters
+[metro-tree-shaker] react-native getters: 21 of 96 read; removed 192 modules (259.8 KiB).
+▶ expo-barrels/android/expo-tree-shaking-getters
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+▶ bare-expo/ios/expo-getters
+[metro-tree-shaker] react-native getters: 19 of 96 read; removed 75 modules (91.1 KiB).
+▶ bare-expo/ios/expo-tree-shaking-getters
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+▶ bare-expo/android/expo-getters
+[metro-tree-shaker] react-native getters: 19 of 96 read; removed 82 modules (98.6 KiB).
+▶ bare-expo/android/expo-tree-shaking-getters
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+▶ bare-expo-preset/ios/expo-getters
+[metro-tree-shaker] react-native getters: 16 of 96 read; removed 101 modules (90.9 KiB).
+▶ bare-expo-preset/ios/expo-tree-shaking-getters
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.
+▶ bare-expo-preset/android/expo-getters
+[metro-tree-shaker] react-native getters: 16 of 96 read; removed 98 modules (91.7 KiB).
+▶ bare-expo-preset/android/expo-tree-shaking-getters
+[metro-tree-shaker] react-native getters: skipped, kept everything. node_modules/react-native/index.js is not a Metro module definition.

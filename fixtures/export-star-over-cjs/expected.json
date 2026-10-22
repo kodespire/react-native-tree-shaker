@@ -1,0 +1,8 @@
+{
+  "description": "`export *` over a CommonJS module whose exports can't be listed (`module.exports = {...}`) keeps that module whole. The barrel's own unread exports still go.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "barrel.js", "legacy.js"], "removed": [] },
+  "exports": { "barrel.js": { "kept": [], "removed": ["y"] }, "legacy.js": { "kept": ["x", "z"], "removed": [] } },
+  "output": ["x"]
+}

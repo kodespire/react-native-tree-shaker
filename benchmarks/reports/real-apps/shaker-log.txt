@@ -1,0 +1,4 @@
+rocketchat (react-native bundle, stock config):
+[metro-tree-shaker] react-native getters: 54 of 98 read; removed 48 modules (26.9 KiB).
+expensify (rock bundle, BUNDLER=metro, production env):
+[metro-tree-shaker] react-native getters: 54 of 98 read; removed 39 modules (36.6 KiB).

@@ -1,0 +1,38 @@
+{
+  "outDir": "results",
+  "apps": [
+    {
+      "name": "rn-template",
+      "root": "../../bench-apps/rn-template",
+      "entry": "index.js",
+      "platforms": ["ios", "android"]
+    },
+    {
+      "name": "expo-app",
+      "root": "../../bench-apps/expo-app",
+      "entry": "index.js"
+    }
+  ],
+  "variants": [
+    {
+      "name": "baseline",
+      "description": "Stock Metro via the React Native CLI.",
+      "command": "npx react-native bundle --entry-file {entry} --platform {platform} --dev false --minify true --bundle-output {bundle} --sourcemap-output {map}",
+      "apps": ["rn-template"]
+    },
+    {
+      "name": "metro-tree-shaker",
+      "description": "Requires the app's metro.config.js to apply withTreeShaking() when METRO_TREE_SHAKER is set.",
+      "command": "npx react-native bundle --entry-file {entry} --platform {platform} --dev false --minify true --bundle-output {bundle} --sourcemap-output {map}",
+      "env": { "METRO_TREE_SHAKER": "1" },
+      "apps": ["rn-template"]
+    },
+    {
+      "name": "expo-tree-shaking",
+      "description": "Expo's experimental shaker. Check these flags against your Expo SDK's docs.",
+      "command": "npx expo export:embed --entry-file {entry} --platform {platform} --dev false --minify true --bundle-output {bundle} --sourcemap-output {map}",
+      "env": { "EXPO_UNSTABLE_TREE_SHAKING": "1", "EXPO_UNSTABLE_METRO_OPTIMIZE_GRAPH": "1" },
+      "apps": ["expo-app"]
+    }
+  ]
+}

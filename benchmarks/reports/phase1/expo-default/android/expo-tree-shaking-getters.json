@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "label": "expo-default/android/expo-tree-shaking-getters",
+  "bytes": {
+    "raw": 2300182,
+    "gzip": 566301,
+    "brotli": 445660,
+    "hermesBytecode": 3393738
+  },
+  "moduleCount": 1496,
+  "packages": [
+    {
+      "name": "react-native",
+      "bytes": 595933,
+      "sources": 437
+    },
+    {
+      "name": "expo-router",
+      "bytes": 480799,
+      "sources": 411
+    },
+    {
+      "name": "react-native-reanimated",
+      "bytes": 405559,
+      "sources": 193
+    },
+    {
+      "name": "(unmapped)",
+      "bytes": 231180,
+      "sources": 0
+    },
+    {
+      "name": "react-native-worklets",
+      "bytes": 97057,
+      "sources": 51
+    },
+    {
+      "name": "expo",
+      "bytes": 94003,
+      "sources": 43
+    },
+    {
+      "name": "@expo/ui",
+      "bytes": 73648,
+      "sources": 86
+    },
+    {
+      "name": "react-native-screens",
+      "bytes": 62473,
+      "sources": 76
+    },
+    {
+      "name": "@react-native/virtualized-lists",
+      "bytes": 49902,
+      "sources": 15
+    },
+    {
+      "name": "whatwg-url-minimum",
+      "bytes": 30230,
+      "sources": 1
+    },
+    {
+      "name": "(app)",
+      "bytes": 20873,
+      "sources": 22
+    },
+    {
+      "name": "pretty-format",
+      "bytes": 14995,
+      "sources": 10
+    },
+    {
+      "name": "expo-modules-core",
+      "bytes": 13317,
+      "sources": 26
+    },
+    {
+      "name": "expo-image",
+      "bytes": 10283,
+      "sources": 9
+    },
+    {
+      "name": "whatwg-fetch",
+      "bytes": 10027,
+      "sources": 1
+    },
+    {
+      "name": "react",
+      "bytes": 8312,
+      "sources": 6
+    },
+    {
+      "name": "@react-native/normalize-colors",
+      "bytes": 7656,
+      "sources": 1
+    },
+    {
+      "name": "@react-native/js-polyfills",
+      "bytes": 7065,
+      "sources": 2
+    },
+    {
+      "name": "regenerator-runtime",
+      "bytes": 6632,
+      "sources": 1
+    },
+    {
+      "name": "expo-linking",
+      "bytes": 6546,
+      "sources": 7
+    },
+    {
+      "name": "expo-font",
+      "bytes": 6095,
+      "sources": 9
+    },
+    {
+      "name": "expo-asset",
+      "bytes": 5855,
+      "sources": 10
+    },
+    {
+      "name": "metro-runtime",
+      "bytes": 5322,
+      "sources": 2
+    },
+    {
+      "name": "react-native-safe-area-context",
+      "bytes": 5141,
+      "sources": 8
+    },
+    {
+      "name": "promise",
+      "bytes": 4135,
+      "sources": 3
+    },
+    {
+      "name": "scheduler",
+      "bytes": 3995,
+      "sources": 2
+    },
+    {
+      "name": "expo-device",
+      "bytes": 3967,
+      "sources": 3
+    },
+    {
+      "name": "@expo/metro-runtime",
+      "bytes": 3678,
+      "sources": 4
+    },
+    {
+      "name": "@ungap/structured-clone",
+      "bytes": 3485,
+      "sources": 4
+    },
+    {
+      "name": "@radix-ui/react-slot",
+      "bytes": 3346,
+      "sources": 1
+    },
+    {
+      "name": "expo-constants",
+      "bytes": 3143,
+      "sources": 3
+    },
+    {
+      "name": "@expo/log-box-utils",
+      "bytes": 3061,
+      "sources": 4
+    },
+    {
+      "name": "@expo/cli",
+      "bytes": 2348,
+      "sources": 1
+    },
+    {
+      "name": "ansi-styles",
+      "bytes": 2017,
+      "sources": 1
+    },
+    {
+      "name": "expo-symbols",
+      "bytes": 1920,
+      "sources": 6
+    },
+    {
+      "name": "react-is",
+      "bytes": 1900,
+      "sources": 2
+    },
+    {
+      "name": "stacktrace-parser",
+      "bytes": 1822,
+      "sources": 1
+    },
+    {
+      "name": "react-fast-compare",
+      "bytes": 1738,
+      "sources": 1
+    },
+    {
+      "name": "base64-js",
+      "bytes": 1401,
+      "sources": 1
+    },
+    {
+      "name": "expo-web-browser",
+      "bytes": 1377,
+      "sources": 3
+    },
+    {
+      "name": "flow-enums-runtime",
+      "bytes": 1128,
+      "sources": 1
+    },
+    {
+      "name": "@radix-ui/react-compose-refs",
+      "bytes": 1077,
+      "sources": 1
+    },
+    {
+      "name": "expo-glass-effect",
+      "bytes": 986,
+      "sources": 5
+    },
+    {
+      "name": "@react-native-masked-view/masked-view",
+      "bytes": 775,
+      "sources": 2
+    },
+    {
+      "name": "@react-native/asset-utils",
+      "bytes": 730,
+      "sources": 2
+    },
+    {
+      "name": "react-native-is-edge-to-edge",
+      "bytes": 592,
+      "sources": 1
+    },
+    {
+      "name": "expo-splash-screen",
+      "bytes": 456,
+      "sources": 1
+    },
+    {
+      "name": "memoize-one",
+      "bytes": 443,
+      "sources": 1
+    },
+    {
+      "name": "nanoid",
+      "bytes": 390,
+      "sources": 1
+    },
+    {
+      "name": "@expo-google-fonts/material-symbols",
+      "bytes": 369,
+      "sources": 2
+    },
+    {
+      "name": "invariant",
+      "bytes": 359,
+      "sources": 1
+    },
+    {
+      "name": "react-freeze",
+      "bytes": 274,
+      "sources": 1
+    },
+    {
+      "name": "nullthrows",
+      "bytes": 214,
+      "sources": 1
+    },
+    {
+      "name": "standard-navigation",
+      "bytes": 94,
+      "sources": 1
+    },
+    {
+      "name": "warn-once",
+      "bytes": 39,
+      "sources": 1
+    },
+    {
+      "name": "@expo/metro",
+      "bytes": 20,
+      "sources": 1
+    }
+  ],
+  "buildMs": 9636
+}

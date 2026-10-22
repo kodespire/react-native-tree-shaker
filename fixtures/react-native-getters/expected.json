@@ -1,0 +1,19 @@
+{
+  "description": "react-native's entry is a CommonJS object of lazy require() getters. Getters nobody reads, and the modules only they require, are removed.",
+  "phase": 1,
+  "entry": "index.js",
+  "modules": {
+    "kept": [
+      "index.js",
+      "node_modules/react-native/index.js",
+      "node_modules/react-native/Libraries/View.js"
+    ],
+    "removed": [
+      "node_modules/react-native/Libraries/ToastAndroid.js"
+    ]
+  },
+  "exports": {},
+  "output": [
+    "View"
+  ]
+}

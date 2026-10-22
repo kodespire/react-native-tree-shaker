@@ -1,0 +1,8 @@
+{
+  "description": "A CommonJS require() of an ESM module that is only read through static member access keeps only the members read.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "esm.js"], "removed": [] },
+  "exports": { "esm.js": { "kept": ["a"], "removed": ["b"] } },
+  "notes": "Bundlers that shake ESM syntax keep every export here, because require() returns the whole exports object. metro-tree-shaker works on Metro's output, where every import is a require, so it follows the variable instead."
+}

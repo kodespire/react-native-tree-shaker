@@ -1,0 +1,8 @@
+{
+  "description": "An export the module also uses itself: removing the unread export must keep the value for the module's own use.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "lib.js"], "removed": [] },
+  "exports": { "lib.js": { "kept": ["run"], "removed": ["helper"] } },
+  "output": ["made"]
+}

@@ -1,0 +1,7 @@
+{
+  "description": "A namespace import used only through static member access keeps only the members accessed.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "utils.js"], "removed": [] },
+  "exports": { "utils.js": { "kept": ["a"], "removed": ["b"] } }
+}

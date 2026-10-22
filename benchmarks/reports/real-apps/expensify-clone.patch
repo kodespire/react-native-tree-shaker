@@ -1,0 +1,13 @@
+diff --git a/metro.config.js b/metro.config.js
+index de4436a..edff80a 100644
+--- a/metro.config.js
++++ b/metro.config.js
+@@ -79,3 +79,8 @@ const config = {
+ const mergedConfig = getBundleModeMetroConfig(wrapWithReanimatedMetroConfig(mergeConfig(defaultConfig, expoConfig, config)));
+ 
+ module.exports = isDev ? mergedConfig : withSentryConfig(mergedConfig);
++
++// Added for metro-tree-shaker benchmarks.
++if (process.env.METRO_TREE_SHAKER) {
++    module.exports = require('<repo>/packages/metro-tree-shaker').withTreeShaking(module.exports);
++}

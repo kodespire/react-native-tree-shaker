@@ -1,0 +1,11 @@
+{
+  "description": "A module that replaces module.exports can't have exports removed, but what it reads from its own dependencies is still tracked.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "legacy.js", "helpers.js"], "removed": [] },
+  "exports": {
+    "legacy.js": { "kept": ["run", "extra"], "removed": [] },
+    "helpers.js": { "kept": ["run"], "removed": ["unused"] }
+  },
+  "output": ["run"]
+}

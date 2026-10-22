@@ -1,0 +1,14 @@
+{
+  "description": "A CommonJS entry that picks its build at runtime (`module.exports = require('./prod')` or `require('./dev')`, like React's) is an alias of both: reads through it count for each.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": {
+    "kept": ["index.js", "node_modules/dual-lib/index.js", "node_modules/dual-lib/prod.js", "node_modules/dual-lib/dev.js"],
+    "removed": []
+  },
+  "exports": {
+    "node_modules/dual-lib/prod.js": { "kept": ["greet"], "removed": ["unused"] },
+    "node_modules/dual-lib/dev.js": { "kept": ["greet"], "removed": ["unused"] }
+  },
+  "output": ["hello from prod"]
+}

@@ -1,0 +1,7 @@
+{
+  "description": "A package with no sideEffects field is assumed to have side effects, so the module stays even though its export is unused. The unused export itself can still be removed.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "node_modules/legacy-lib/index.js"], "removed": [] },
+  "exports": { "node_modules/legacy-lib/index.js": { "kept": [], "removed": ["register"] } }
+}

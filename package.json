@@ -1,0 +1,26 @@
+{
+  "name": "metro-tree-shaker-monorepo",
+  "private": true,
+  "description": "Tree shaking for React Native's Metro bundler.",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "benchmarks"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "tsc -b --clean",
+    "typecheck": "tsc -b && tsc -p tsconfig.test.json",
+    "test": "vitest run",
+    "bench": "node benchmarks/dist/cli.js",
+    "test:metro-versions": "node scripts/test-metro-versions.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

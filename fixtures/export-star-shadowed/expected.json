@@ -1,0 +1,33 @@
+{
+  "description": "A barrel's own export shadows the same name from `export *`, so reading it through the barrel doesn't read the star target's copy.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": {
+    "kept": [
+      "index.js",
+      "barrel.js",
+      "base.js"
+    ],
+    "removed": []
+  },
+  "exports": {
+    "barrel.js": {
+      "kept": [
+        "name"
+      ],
+      "removed": []
+    },
+    "base.js": {
+      "kept": [
+        "shared"
+      ],
+      "removed": [
+        "name",
+        "unused"
+      ]
+    }
+  },
+  "output": [
+    "barrel shared"
+  ]
+}

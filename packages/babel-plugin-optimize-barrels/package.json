@@ -1,0 +1,40 @@
+{
+  "name": "@metro-tree-shaker/babel-plugin-optimize-barrels",
+  "version": "0.0.0",
+  "description": "Rewrites imports from barrel files to the modules that define them.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kodespire/react-native-tree-shaker.git",
+    "directory": "packages/babel-plugin-optimize-barrels"
+  },
+  "keywords": [
+    "babel-plugin",
+    "react-native",
+    "barrel",
+    "bundle-size"
+  ],
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20.19"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@types/babel__core": "^7.20.5"
+  }
+}

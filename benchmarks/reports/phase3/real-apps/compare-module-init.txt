@@ -1,0 +1,124 @@
+== Rocket.Chat
+4587 modules required in both bundles. 438 failed in both (code that needs a device).
+29 behave differently:
+  app/containers/ActionSheet/ActionSheet.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  app/containers/ActionSheet/Provider.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  app/containers/ActionSheet/index.ts
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  app/containers/Passcode/Base/index.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  app/containers/Passcode/PasscodeChoose.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  app/lib/notifications/push.ts
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  app/lib/notifications/videoConf/getInitialNotification.ts
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  app/views/CallView/components/CallActionButton.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  app/views/CallView/components/Dialpad/Dialpad.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  app/views/CallView/components/Dialpad/DialpadButton.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/@expo/ui/src/swift-ui/Host/index.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/@expo/ui/src/swift-ui/Image/index.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/@expo/ui/src/swift-ui/Picker/index.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/@expo/ui/src/swift-ui/SlotView.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/@expo/ui/src/swift-ui/Text/index.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/@expo/ui/src/swift-ui/Toggle/index.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/@expo/ui/src/swift-ui/index.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/@expo/ui/src/swift-ui/modifiers/index.ts
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/@magrinj/expo-quick-look/build/ExpoQuickLookModule.js
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/@magrinj/expo-quick-look/build/index.js
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo-camera/build/index.js
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo-haptics/src/ExpoHaptics.ts
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo-haptics/src/Haptics.ts
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo-image/src/Image.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo-image/src/ImageModule.ts
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo-notifications/build/index.js
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo-video/build/index.js
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo/src/Expo.fx.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo/src/Expo.ts
+    plain:  Unexpected end of JSON input
+    shaken: ok
+
+== Expensify
+12575 modules required in both bundles. 3607 failed in both (code that needs a device).
+10 behave differently:
+  node_modules/expo-image-manipulator/src/ImageManipulator.ts
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo-image-manipulator/src/NativeImageManipulatorModule.ts
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo-image/src/Image.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo-image/src/ImageModule.ts
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo-location/build/Location.js
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo-location/build/index.js
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo-video/build/index.js
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo/src/Expo.fx.tsx
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  node_modules/expo/src/Expo.ts
+    plain:  Unexpected end of JSON input
+    shaken: ok
+  src/pages/iou/request/step/IOURequestStepDistanceGPS/const.ts
+    plain:  Unexpected end of JSON input
+    shaken: ok

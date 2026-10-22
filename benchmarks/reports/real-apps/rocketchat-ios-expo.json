@@ -1,0 +1,1148 @@
+{
+  "schemaVersion": 1,
+  "label": "rocketchat-ios-expo",
+  "bytes": {
+    "raw": 13900008,
+    "gzip": 3708915,
+    "brotli": 2825870,
+    "hermesBytecode": 17272384
+  },
+  "moduleCount": 5346,
+  "packages": [
+    {
+      "name": "(app)",
+      "bytes": 4732006,
+      "sources": 1260
+    },
+    {
+      "name": "mathjax-full",
+      "bytes": 1772995,
+      "sources": 285
+    },
+    {
+      "name": "react-native-reanimated",
+      "bytes": 705604,
+      "sources": 269
+    },
+    {
+      "name": "react-native-katex",
+      "bytes": 666779,
+      "sources": 3
+    },
+    {
+      "name": "(unmapped)",
+      "bytes": 578127,
+      "sources": 0
+    },
+    {
+      "name": "react-native",
+      "bytes": 570428,
+      "sources": 450
+    },
+    {
+      "name": "@expo/vector-icons",
+      "bytes": 463911,
+      "sources": 64
+    },
+    {
+      "name": "jsrsasign",
+      "bytes": 297274,
+      "sources": 1
+    },
+    {
+      "name": "transliteration",
+      "bytes": 292003,
+      "sources": 1
+    },
+    {
+      "name": "rxjs",
+      "bytes": 259750,
+      "sources": 449
+    },
+    {
+      "name": "@rocket.chat/message-parser",
+      "bytes": 249830,
+      "sources": 1
+    },
+    {
+      "name": "@rocket.chat/ui-kit",
+      "bytes": 235455,
+      "sources": 43
+    },
+    {
+      "name": "react-native-gesture-handler",
+      "bytes": 190080,
+      "sources": 153
+    },
+    {
+      "name": "xregexp",
+      "bytes": 139743,
+      "sources": 11
+    },
+    {
+      "name": "mime-db",
+      "bytes": 123790,
+      "sources": 2
+    },
+    {
+      "name": "react-native-svg",
+      "bytes": 103315,
+      "sources": 112
+    },
+    {
+      "name": "lodash",
+      "bytes": 102914,
+      "sources": 181
+    },
+    {
+      "name": "ajv",
+      "bytes": 100598,
+      "sources": 63
+    },
+    {
+      "name": "react-native-worklets",
+      "bytes": 97323,
+      "sources": 43
+    },
+    {
+      "name": "expo",
+      "bytes": 95033,
+      "sources": 41
+    },
+    {
+      "name": "@rocket.chat/media-signaling",
+      "bytes": 88931,
+      "sources": 32
+    },
+    {
+      "name": "@react-navigation/core",
+      "bytes": 86009,
+      "sources": 77
+    },
+    {
+      "name": "@nozbe/watermelondb",
+      "bytes": 85943,
+      "sources": 101
+    },
+    {
+      "name": "@expo/ui",
+      "bytes": 74759,
+      "sources": 100
+    },
+    {
+      "name": "react-native-keyboard-controller",
+      "bytes": 59573,
+      "sources": 40
+    },
+    {
+      "name": "dayjs",
+      "bytes": 58661,
+      "sources": 31
+    },
+    {
+      "name": "react-hook-form",
+      "bytes": 49992,
+      "sources": 2
+    },
+    {
+      "name": "@react-native/virtualized-lists",
+      "bytes": 48334,
+      "sources": 15
+    },
+    {
+      "name": "react-native-screens",
+      "bytes": 47827,
+      "sources": 53
+    },
+    {
+      "name": "react-native-popover-view",
+      "bytes": 46467,
+      "sources": 11
+    },
+    {
+      "name": "bytebuffer",
+      "bytes": 43326,
+      "sources": 1
+    },
+    {
+      "name": "core-js-pure",
+      "bytes": 43061,
+      "sources": 256
+    },
+    {
+      "name": "semver",
+      "bytes": 40262,
+      "sources": 65
+    },
+    {
+      "name": "yup",
+      "bytes": 39627,
+      "sources": 26
+    },
+    {
+      "name": "react-native-device-info",
+      "bytes": 37776,
+      "sources": 6
+    },
+    {
+      "name": "whatwg-url-without-unicode",
+      "bytes": 37104,
+      "sources": 10
+    },
+    {
+      "name": "react-native-webrtc",
+      "bytes": 36991,
+      "sources": 35
+    },
+    {
+      "name": "@react-navigation/elements",
+      "bytes": 34060,
+      "sources": 38
+    },
+    {
+      "name": "mhchemparser",
+      "bytes": 33859,
+      "sources": 1
+    },
+    {
+      "name": "reanimated-tab-view",
+      "bytes": 33613,
+      "sources": 25
+    },
+    {
+      "name": "@react-native-firebase/app",
+      "bytes": 32887,
+      "sources": 26
+    },
+    {
+      "name": "expo-notifications",
+      "bytes": 31009,
+      "sources": 55
+    },
+    {
+      "name": "@rocket.chat/sdk",
+      "bytes": 30249,
+      "sources": 14
+    },
+    {
+      "name": "@react-native-firebase/analytics",
+      "bytes": 28243,
+      "sources": 6
+    },
+    {
+      "name": "react-native-animatable",
+      "bytes": 25095,
+      "sources": 21
+    },
+    {
+      "name": "axios",
+      "bytes": 23498,
+      "sources": 39
+    },
+    {
+      "name": "react-native-external-keyboard",
+      "bytes": 23282,
+      "sources": 33
+    },
+    {
+      "name": "@react-navigation/native",
+      "bytes": 22810,
+      "sources": 27
+    },
+    {
+      "name": "property-information",
+      "bytes": 22248,
+      "sources": 18
+    },
+    {
+      "name": "react-native-drawer-layout",
+      "bytes": 21223,
+      "sources": 10
+    },
+    {
+      "name": "transformation-matrix",
+      "bytes": 20964,
+      "sources": 23
+    },
+    {
+      "name": "buffer",
+      "bytes": 20665,
+      "sources": 1
+    },
+    {
+      "name": "@redux-saga/core",
+      "bytes": 20189,
+      "sources": 3
+    },
+    {
+      "name": "typia",
+      "bytes": 19617,
+      "sources": 47
+    },
+    {
+      "name": "@react-navigation/routers",
+      "bytes": 18834,
+      "sources": 10
+    },
+    {
+      "name": "whatwg-url-minimum",
+      "bytes": 18288,
+      "sources": 1
+    },
+    {
+      "name": "@bugsnag/core",
+      "bytes": 18173,
+      "sources": 25
+    },
+    {
+      "name": "@react-navigation/native-stack",
+      "bytes": 18103,
+      "sources": 10
+    },
+    {
+      "name": "uri-js",
+      "bytes": 17731,
+      "sources": 1
+    },
+    {
+      "name": "event-target-shim",
+      "bytes": 17471,
+      "sources": 2
+    },
+    {
+      "name": "source-map",
+      "bytes": 16415,
+      "sources": 7
+    },
+    {
+      "name": "ua-parser-js",
+      "bytes": 15303,
+      "sources": 1
+    },
+    {
+      "name": "react-native-math-view",
+      "bytes": 14375,
+      "sources": 14
+    },
+    {
+      "name": "@react-navigation/drawer",
+      "bytes": 14225,
+      "sources": 15
+    },
+    {
+      "name": "react-redux",
+      "bytes": 14036,
+      "sources": 27
+    },
+    {
+      "name": "expo-modules-core",
+      "bytes": 13675,
+      "sources": 34
+    },
+    {
+      "name": "react-native-modal",
+      "bytes": 13560,
+      "sources": 4
+    },
+    {
+      "name": "deprecated-react-native-prop-types",
+      "bytes": 13317,
+      "sources": 18
+    },
+    {
+      "name": "react-native-webview",
+      "bytes": 11711,
+      "sources": 6
+    },
+    {
+      "name": "tslib",
+      "bytes": 11255,
+      "sources": 1
+    },
+    {
+      "name": "ejson",
+      "bytes": 10834,
+      "sources": 1
+    },
+    {
+      "name": "react-native-picker-select",
+      "bytes": 10709,
+      "sources": 2
+    },
+    {
+      "name": "expo-image",
+      "bytes": 10317,
+      "sources": 12
+    },
+    {
+      "name": "js-sha256",
+      "bytes": 10207,
+      "sources": 1
+    },
+    {
+      "name": "i18n-js",
+      "bytes": 10195,
+      "sources": 1
+    },
+    {
+      "name": "superstruct",
+      "bytes": 10184,
+      "sources": 1
+    },
+    {
+      "name": "whatwg-fetch",
+      "bytes": 9992,
+      "sources": 1
+    },
+    {
+      "name": "@lodev09/react-native-true-sheet",
+      "bytes": 9977,
+      "sources": 10
+    },
+    {
+      "name": "color-convert",
+      "bytes": 9882,
+      "sources": 3
+    },
+    {
+      "name": "expo-audio",
+      "bytes": 9873,
+      "sources": 10
+    },
+    {
+      "name": "lodash.isequal",
+      "bytes": 9710,
+      "sources": 1
+    },
+    {
+      "name": "react-native-notifier",
+      "bytes": 9705,
+      "sources": 10
+    },
+    {
+      "name": "react-native-nitro-modules",
+      "bytes": 9682,
+      "sources": 17
+    },
+    {
+      "name": "fast-uri",
+      "bytes": 9138,
+      "sources": 3
+    },
+    {
+      "name": "@babel/runtime",
+      "bytes": 8980,
+      "sources": 31
+    },
+    {
+      "name": "expo-file-system",
+      "bytes": 8685,
+      "sources": 5
+    },
+    {
+      "name": "@react-native-community/netinfo",
+      "bytes": 7961,
+      "sources": 9
+    },
+    {
+      "name": "react",
+      "bytes": 7952,
+      "sources": 6
+    },
+    {
+      "name": "css-selector-parser",
+      "bytes": 7904,
+      "sources": 4
+    },
+    {
+      "name": "@react-native-community/hooks",
+      "bytes": 7607,
+      "sources": 10
+    },
+    {
+      "name": "long",
+      "bytes": 7500,
+      "sources": 1
+    },
+    {
+      "name": "@react-native/normalize-colors",
+      "bytes": 7491,
+      "sources": 1
+    },
+    {
+      "name": "@react-native/normalize-color",
+      "bytes": 7320,
+      "sources": 1
+    },
+    {
+      "name": "expo-asset",
+      "bytes": 6889,
+      "sources": 12
+    },
+    {
+      "name": "react-native-mmkv",
+      "bytes": 6737,
+      "sources": 19
+    },
+    {
+      "name": "regenerator-runtime",
+      "bytes": 6632,
+      "sources": 1
+    },
+    {
+      "name": "@react-native/js-polyfills",
+      "bytes": 6612,
+      "sources": 2
+    },
+    {
+      "name": "@bugsnag/react-native",
+      "bytes": 6222,
+      "sources": 4
+    },
+    {
+      "name": "expo-font",
+      "bytes": 6102,
+      "sources": 11
+    },
+    {
+      "name": "react-native-callkeep",
+      "bytes": 6043,
+      "sources": 2
+    },
+    {
+      "name": "@react-native-community/datetimepicker",
+      "bytes": 5919,
+      "sources": 8
+    },
+    {
+      "name": "@react-native-firebase/crashlytics",
+      "bytes": 5918,
+      "sources": 4
+    },
+    {
+      "name": "react-is",
+      "bytes": 5863,
+      "sources": 6
+    },
+    {
+      "name": "color",
+      "bytes": 5791,
+      "sources": 1
+    },
+    {
+      "name": "expo-camera",
+      "bytes": 5784,
+      "sources": 7
+    },
+    {
+      "name": "color2k",
+      "bytes": 5375,
+      "sources": 1
+    },
+    {
+      "name": "@react-native-async-storage/async-storage",
+      "bytes": 5311,
+      "sources": 6
+    },
+    {
+      "name": "js-base64",
+      "bytes": 5311,
+      "sources": 1
+    },
+    {
+      "name": "promise",
+      "bytes": 5001,
+      "sources": 4
+    },
+    {
+      "name": "url-parse",
+      "bytes": 4968,
+      "sources": 1
+    },
+    {
+      "name": "react-native-keychain",
+      "bytes": 4814,
+      "sources": 4
+    },
+    {
+      "name": "yallist",
+      "bytes": 4757,
+      "sources": 2
+    },
+    {
+      "name": "@react-native-picker/picker",
+      "bytes": 4644,
+      "sources": 8
+    },
+    {
+      "name": "stacktrace-gps",
+      "bytes": 4638,
+      "sources": 1
+    },
+    {
+      "name": "react-native-skeleton-placeholder",
+      "bytes": 4576,
+      "sources": 1
+    },
+    {
+      "name": "react-native-safe-area-context",
+      "bytes": 4505,
+      "sources": 9
+    },
+    {
+      "name": "react-native-localize",
+      "bytes": 4412,
+      "sources": 4
+    },
+    {
+      "name": "debug",
+      "bytes": 4325,
+      "sources": 2
+    },
+    {
+      "name": "expo-apple-authentication",
+      "bytes": 4212,
+      "sources": 6
+    },
+    {
+      "name": "webidl-conversions",
+      "bytes": 4107,
+      "sources": 1
+    },
+    {
+      "name": "scheduler",
+      "bytes": 3995,
+      "sources": 2
+    },
+    {
+      "name": "expo-device",
+      "bytes": 3965,
+      "sources": 3
+    },
+    {
+      "name": "expo-video",
+      "bytes": 3853,
+      "sources": 9
+    },
+    {
+      "name": "react-native-a11y-order",
+      "bytes": 3624,
+      "sources": 12
+    },
+    {
+      "name": "redux",
+      "bytes": 3601,
+      "sources": 1
+    },
+    {
+      "name": "@react-native-camera-roll/camera-roll",
+      "bytes": 3518,
+      "sources": 6
+    },
+    {
+      "name": "react-native-easy-grid",
+      "bytes": 3466,
+      "sources": 5
+    },
+    {
+      "name": "lru-cache",
+      "bytes": 3458,
+      "sources": 1
+    },
+    {
+      "name": "color-name",
+      "bytes": 3421,
+      "sources": 1
+    },
+    {
+      "name": "hastscript",
+      "bytes": 3333,
+      "sources": 6
+    },
+    {
+      "name": "color-string",
+      "bytes": 3164,
+      "sources": 1
+    },
+    {
+      "name": "@ungap/structured-clone",
+      "bytes": 3048,
+      "sources": 4
+    },
+    {
+      "name": "error-stack-parser",
+      "bytes": 2989,
+      "sources": 1
+    },
+    {
+      "name": "react-native-linear-gradient",
+      "bytes": 2923,
+      "sources": 5
+    },
+    {
+      "name": "expo-constants",
+      "bytes": 2812,
+      "sources": 3
+    },
+    {
+      "name": "expo-web-browser",
+      "bytes": 2806,
+      "sources": 3
+    },
+    {
+      "name": "@bugsnag/plugin-react",
+      "bytes": 2794,
+      "sources": 1
+    },
+    {
+      "name": "react-native-url-polyfill",
+      "bytes": 2729,
+      "sources": 5
+    },
+    {
+      "name": "expo-application",
+      "bytes": 2622,
+      "sources": 3
+    },
+    {
+      "name": "@react-native-clipboard/clipboard",
+      "bytes": 2575,
+      "sources": 4
+    },
+    {
+      "name": "react-native-easy-toast",
+      "bytes": 2551,
+      "sources": 1
+    },
+    {
+      "name": "expo-local-authentication",
+      "bytes": 2513,
+      "sources": 3
+    },
+    {
+      "name": "stacktrace-js",
+      "bytes": 2509,
+      "sources": 1
+    },
+    {
+      "name": "@expo/cli",
+      "bytes": 2407,
+      "sources": 1
+    },
+    {
+      "name": "@bugsnag/plugin-network-breadcrumbs",
+      "bytes": 2262,
+      "sources": 1
+    },
+    {
+      "name": "punycode",
+      "bytes": 2247,
+      "sources": 1
+    },
+    {
+      "name": "use-sync-external-store",
+      "bytes": 2246,
+      "sources": 6
+    },
+    {
+      "name": "use-debounce",
+      "bytes": 2214,
+      "sources": 1
+    },
+    {
+      "name": "react-native-bootsplash",
+      "bytes": 2213,
+      "sources": 2
+    },
+    {
+      "name": "expo-haptics",
+      "bytes": 2178,
+      "sources": 3
+    },
+    {
+      "name": "dequal",
+      "bytes": 2177,
+      "sources": 2
+    },
+    {
+      "name": "stackframe",
+      "bytes": 2093,
+      "sources": 1
+    },
+    {
+      "name": "@rocket.chat/mobile-crypto",
+      "bytes": 2083,
+      "sources": 2
+    },
+    {
+      "name": "react-native-incall-manager",
+      "bytes": 1983,
+      "sources": 1
+    },
+    {
+      "name": "@babel/runtime-corejs3",
+      "bytes": 1951,
+      "sources": 23
+    },
+    {
+      "name": "zustand",
+      "bytes": 1938,
+      "sources": 5
+    },
+    {
+      "name": "stacktrace-parser",
+      "bytes": 1822,
+      "sources": 1
+    },
+    {
+      "name": "@bugsnag/plugin-react-native-client-sync",
+      "bytes": 1790,
+      "sources": 1
+    },
+    {
+      "name": "reselect",
+      "bytes": 1723,
+      "sources": 1
+    },
+    {
+      "name": "abort-controller",
+      "bytes": 1668,
+      "sources": 2
+    },
+    {
+      "name": "@zoontek/react-native-navigation-bar",
+      "bytes": 1625,
+      "sources": 3
+    },
+    {
+      "name": "@bugsnag/safe-json-stringify",
+      "bytes": 1528,
+      "sources": 1
+    },
+    {
+      "name": "typed-redux-saga",
+      "bytes": 1516,
+      "sources": 1
+    },
+    {
+      "name": "property-expr",
+      "bytes": 1486,
+      "sources": 1
+    },
+    {
+      "name": "hast-util-from-selector",
+      "bytes": 1444,
+      "sources": 2
+    },
+    {
+      "name": "expo-keep-awake",
+      "bytes": 1433,
+      "sources": 3
+    },
+    {
+      "name": "@hookform/resolvers",
+      "bytes": 1404,
+      "sources": 2
+    },
+    {
+      "name": "base64-js",
+      "bytes": 1401,
+      "sources": 1
+    },
+    {
+      "name": "ms",
+      "bytes": 1322,
+      "sources": 1
+    },
+    {
+      "name": "react-native-mime-types",
+      "bytes": 1288,
+      "sources": 1
+    },
+    {
+      "name": "remove-markdown",
+      "bytes": 1283,
+      "sources": 1
+    },
+    {
+      "name": "json-schema-traverse",
+      "bytes": 1196,
+      "sources": 1
+    },
+    {
+      "name": "@redux-saga/is",
+      "bytes": 1190,
+      "sources": 1
+    },
+    {
+      "name": "flow-enums-runtime",
+      "bytes": 1128,
+      "sources": 1
+    },
+    {
+      "name": "pretty-bytes",
+      "bytes": 1095,
+      "sources": 1
+    },
+    {
+      "name": "toposort",
+      "bytes": 1061,
+      "sources": 1
+    },
+    {
+      "name": "hoist-non-react-statics",
+      "bytes": 957,
+      "sources": 1
+    },
+    {
+      "name": "tiny-events",
+      "bytes": 922,
+      "sources": 1
+    },
+    {
+      "name": "@react-native/assets-registry",
+      "bytes": 888,
+      "sources": 1
+    },
+    {
+      "name": "@bugsnag/delivery-react-native",
+      "bytes": 882,
+      "sources": 1
+    },
+    {
+      "name": "ieee754",
+      "bytes": 871,
+      "sources": 1
+    },
+    {
+      "name": "react-native-image-crop-picker",
+      "bytes": 768,
+      "sources": 2
+    },
+    {
+      "name": "@bugsnag/plugin-react-native-unhandled-rejection",
+      "bytes": 752,
+      "sources": 1
+    },
+    {
+      "name": "prop-types",
+      "bytes": 741,
+      "sources": 3
+    },
+    {
+      "name": "fast-deep-equal",
+      "bytes": 714,
+      "sources": 1
+    },
+    {
+      "name": "nanoclone",
+      "bytes": 663,
+      "sources": 1
+    },
+    {
+      "name": "@react-native-masked-view/masked-view",
+      "bytes": 647,
+      "sources": 2
+    },
+    {
+      "name": "stack-generator",
+      "bytes": 627,
+      "sources": 1
+    },
+    {
+      "name": "@bugsnag/cuid",
+      "bytes": 614,
+      "sources": 5
+    },
+    {
+      "name": "expo-document-picker",
+      "bytes": 606,
+      "sources": 3
+    },
+    {
+      "name": "querystringify",
+      "bytes": 590,
+      "sources": 1
+    },
+    {
+      "name": "@rocket.chat/emitter",
+      "bytes": 577,
+      "sources": 1
+    },
+    {
+      "name": "@react-native-cookies/cookies",
+      "bytes": 535,
+      "sources": 1
+    },
+    {
+      "name": "@bugsnag/plugin-react-native-global-error-handler",
+      "bytes": 493,
+      "sources": 1
+    },
+    {
+      "name": "redux-saga",
+      "bytes": 471,
+      "sources": 2
+    },
+    {
+      "name": "sql-escape-string",
+      "bytes": 465,
+      "sources": 1
+    },
+    {
+      "name": "@bugsnag/plugin-react-native-event-sync",
+      "bytes": 463,
+      "sources": 1
+    },
+    {
+      "name": "use-latest-callback",
+      "bytes": 463,
+      "sources": 2
+    },
+    {
+      "name": "@magrinj/expo-quick-look",
+      "bytes": 458,
+      "sources": 3
+    },
+    {
+      "name": "@redux-saga/symbols",
+      "bytes": 454,
+      "sources": 1
+    },
+    {
+      "name": "hast-util-parse-selector",
+      "bytes": 449,
+      "sources": 2
+    },
+    {
+      "name": "expo-system-ui",
+      "bytes": 448,
+      "sources": 2
+    },
+    {
+      "name": "memoize-one",
+      "bytes": 443,
+      "sources": 1
+    },
+    {
+      "name": "nanoid",
+      "bytes": 390,
+      "sources": 1
+    },
+    {
+      "name": "mitt",
+      "bytes": 380,
+      "sources": 1
+    },
+    {
+      "name": "invariant",
+      "bytes": 359,
+      "sources": 1
+    },
+    {
+      "name": "comma-separated-tokens",
+      "bytes": 326,
+      "sources": 1
+    },
+    {
+      "name": "use-deep-compare-effect",
+      "bytes": 326,
+      "sources": 1
+    },
+    {
+      "name": "@bugsnag/plugin-console-breadcrumbs",
+      "bytes": 308,
+      "sources": 1
+    },
+    {
+      "name": "react-native-console-time-polyfill",
+      "bytes": 306,
+      "sources": 1
+    },
+    {
+      "name": "react-freeze",
+      "bytes": 274,
+      "sources": 1
+    },
+    {
+      "name": "simple-swizzle",
+      "bytes": 259,
+      "sources": 1
+    },
+    {
+      "name": "@redux-saga/delay-p",
+      "bytes": 250,
+      "sources": 1
+    },
+    {
+      "name": "expo-video-thumbnails",
+      "bytes": 249,
+      "sources": 2
+    },
+    {
+      "name": "@redux-saga/deferred",
+      "bytes": 245,
+      "sources": 1
+    },
+    {
+      "name": "requires-port",
+      "bytes": 243,
+      "sources": 1
+    },
+    {
+      "name": "is-arrayish",
+      "bytes": 220,
+      "sources": 1
+    },
+    {
+      "name": "nullthrows",
+      "bytes": 214,
+      "sources": 1
+    },
+    {
+      "name": "react-native-is-edge-to-edge",
+      "bytes": 205,
+      "sources": 2
+    },
+    {
+      "name": "iserror",
+      "bytes": 185,
+      "sources": 1
+    },
+    {
+      "name": "@bugsnag/plugin-react-native-session",
+      "bytes": 169,
+      "sources": 1
+    },
+    {
+      "name": "@bugsnag/plugin-react-native-hermes",
+      "bytes": 167,
+      "sources": 1
+    },
+    {
+      "name": "escape-string-regexp",
+      "bytes": 162,
+      "sources": 1
+    },
+    {
+      "name": "space-separated-tokens",
+      "bytes": 138,
+      "sources": 1
+    },
+    {
+      "name": "form-data",
+      "bytes": 77,
+      "sources": 1
+    },
+    {
+      "name": "warn-once",
+      "bytes": 39,
+      "sources": 1
+    },
+    {
+      "name": "universal-websocket-client",
+      "bytes": 35,
+      "sources": 1
+    }
+  ]
+}

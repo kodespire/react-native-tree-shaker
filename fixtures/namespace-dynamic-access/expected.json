@@ -1,0 +1,7 @@
+{
+  "description": "Computed member access on a namespace import could read any export, so all exports are kept.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "utils.js"], "removed": [] },
+  "exports": { "utils.js": { "kept": ["a", "b"], "removed": [] } }
+}

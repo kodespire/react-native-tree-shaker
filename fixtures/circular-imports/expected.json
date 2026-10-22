@@ -1,0 +1,11 @@
+{
+  "description": "Modules that import each other. Removing b's unused useA leaves a's export a unread, so it goes in a later round.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "a.js", "b.js"], "removed": [] },
+  "exports": {
+    "a.js": { "kept": ["useB"], "removed": ["a"] },
+    "b.js": { "kept": ["b"], "removed": ["useA"] }
+  },
+  "output": ["b"]
+}

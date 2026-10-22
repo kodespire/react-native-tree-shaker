@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "label": "expo-barrels/ios/expo",
+  "bytes": {
+    "raw": 3531879,
+    "gzip": 559549,
+    "brotli": 432448,
+    "hermesBytecode": 4646706
+  },
+  "moduleCount": 3587,
+  "packages": [
+    {
+      "name": "lucide-react-native",
+      "bytes": 1601860,
+      "sources": 1914
+    },
+    {
+      "name": "react-native",
+      "bytes": 608081,
+      "sources": 462
+    },
+    {
+      "name": "(unmapped)",
+      "bytes": 509544,
+      "sources": 0
+    },
+    {
+      "name": "lodash-es",
+      "bytes": 248837,
+      "sources": 640
+    },
+    {
+      "name": "date-fns",
+      "bytes": 165561,
+      "sources": 304
+    },
+    {
+      "name": "react-native-svg",
+      "bytes": 109925,
+      "sources": 112
+    },
+    {
+      "name": "expo",
+      "bytes": 93580,
+      "sources": 43
+    },
+    {
+      "name": "@react-native/virtualized-lists",
+      "bytes": 49911,
+      "sources": 15
+    },
+    {
+      "name": "whatwg-url-minimum",
+      "bytes": 30230,
+      "sources": 1
+    },
+    {
+      "name": "expo-modules-core",
+      "bytes": 15293,
+      "sources": 34
+    },
+    {
+      "name": "pretty-format",
+      "bytes": 14995,
+      "sources": 10
+    },
+    {
+      "name": "whatwg-fetch",
+      "bytes": 10027,
+      "sources": 1
+    },
+    {
+      "name": "react",
+      "bytes": 8142,
+      "sources": 4
+    },
+    {
+      "name": "@react-native/normalize-colors",
+      "bytes": 7656,
+      "sources": 1
+    },
+    {
+      "name": "@react-native/js-polyfills",
+      "bytes": 7065,
+      "sources": 2
+    },
+    {
+      "name": "expo-asset",
+      "bytes": 6691,
+      "sources": 12
+    },
+    {
+      "name": "regenerator-runtime",
+      "bytes": 6632,
+      "sources": 1
+    },
+    {
+      "name": "metro-runtime",
+      "bytes": 5322,
+      "sources": 2
+    },
+    {
+      "name": "promise",
+      "bytes": 4135,
+      "sources": 3
+    },
+    {
+      "name": "scheduler",
+      "bytes": 3995,
+      "sources": 2
+    },
+    {
+      "name": "@ungap/structured-clone",
+      "bytes": 3485,
+      "sources": 4
+    },
+    {
+      "name": "expo-constants",
+      "bytes": 3143,
+      "sources": 3
+    },
+    {
+      "name": "@expo/log-box-utils",
+      "bytes": 3061,
+      "sources": 4
+    },
+    {
+      "name": "@expo/cli",
+      "bytes": 2348,
+      "sources": 1
+    },
+    {
+      "name": "ansi-styles",
+      "bytes": 2017,
+      "sources": 1
+    },
+    {
+      "name": "react-is",
+      "bytes": 1900,
+      "sources": 2
+    },
+    {
+      "name": "stacktrace-parser",
+      "bytes": 1822,
+      "sources": 1
+    },
+    {
+      "name": "base64-js",
+      "bytes": 1401,
+      "sources": 1
+    },
+    {
+      "name": "(app)",
+      "bytes": 1181,
+      "sources": 3
+    },
+    {
+      "name": "expo-status-bar",
+      "bytes": 1145,
+      "sources": 2
+    },
+    {
+      "name": "flow-enums-runtime",
+      "bytes": 1128,
+      "sources": 1
+    },
+    {
+      "name": "@react-native/asset-utils",
+      "bytes": 730,
+      "sources": 2
+    },
+    {
+      "name": "memoize-one",
+      "bytes": 443,
+      "sources": 1
+    },
+    {
+      "name": "invariant",
+      "bytes": 359,
+      "sources": 1
+    },
+    {
+      "name": "nullthrows",
+      "bytes": 214,
+      "sources": 1
+    },
+    {
+      "name": "@expo/metro",
+      "bytes": 20,
+      "sources": 1
+    }
+  ],
+  "developmentCode": [],
+  "buildMs": 13159
+}

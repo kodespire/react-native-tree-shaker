@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "label": "bare-expo-preset/ios/expo",
+  "bytes": {
+    "raw": 867158,
+    "gzip": 213161,
+    "brotli": 175024,
+    "hermesBytecode": 1296853
+  },
+  "moduleCount": 510,
+  "packages": [
+    {
+      "name": "react-native",
+      "bytes": 606366,
+      "sources": 457
+    },
+    {
+      "name": "(unmapped)",
+      "bytes": 81526,
+      "sources": 0
+    },
+    {
+      "name": "expo",
+      "bytes": 62513,
+      "sources": 1
+    },
+    {
+      "name": "@react-native/virtualized-lists",
+      "bytes": 49911,
+      "sources": 15
+    },
+    {
+      "name": "whatwg-fetch",
+      "bytes": 10027,
+      "sources": 1
+    },
+    {
+      "name": "react",
+      "bytes": 8142,
+      "sources": 4
+    },
+    {
+      "name": "@react-native/normalize-colors",
+      "bytes": 7656,
+      "sources": 1
+    },
+    {
+      "name": "@react-native/js-polyfills",
+      "bytes": 7065,
+      "sources": 2
+    },
+    {
+      "name": "regenerator-runtime",
+      "bytes": 6632,
+      "sources": 1
+    },
+    {
+      "name": "@react-native/new-app-screen",
+      "bytes": 5235,
+      "sources": 6
+    },
+    {
+      "name": "react-native-safe-area-context",
+      "bytes": 4467,
+      "sources": 8
+    },
+    {
+      "name": "promise",
+      "bytes": 4135,
+      "sources": 3
+    },
+    {
+      "name": "scheduler",
+      "bytes": 3995,
+      "sources": 2
+    },
+    {
+      "name": "@expo/cli",
+      "bytes": 2348,
+      "sources": 1
+    },
+    {
+      "name": "stacktrace-parser",
+      "bytes": 1822,
+      "sources": 1
+    },
+    {
+      "name": "base64-js",
+      "bytes": 1401,
+      "sources": 1
+    },
+    {
+      "name": "flow-enums-runtime",
+      "bytes": 1128,
+      "sources": 1
+    },
+    {
+      "name": "(app)",
+      "bytes": 1043,
+      "sources": 3
+    },
+    {
+      "name": "@react-native/asset-utils",
+      "bytes": 730,
+      "sources": 2
+    },
+    {
+      "name": "memoize-one",
+      "bytes": 443,
+      "sources": 1
+    },
+    {
+      "name": "invariant",
+      "bytes": 359,
+      "sources": 1
+    },
+    {
+      "name": "nullthrows",
+      "bytes": 214,
+      "sources": 1
+    }
+  ],
+  "developmentCode": [],
+  "buildMs": 5045
+}

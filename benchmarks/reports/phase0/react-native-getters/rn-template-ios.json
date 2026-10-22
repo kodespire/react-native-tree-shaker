@@ -1,0 +1,826 @@
+{
+  "modules": 534,
+  "moduleCodeBytes": 865820,
+  "reactNativeBytes": 739935,
+  "getters": 96,
+  "alwaysKeptBytes": 517061,
+  "ceilingBytes": 348759,
+  "ceilingByPackage": {
+    "react-native": 289635,
+    "@react-native/virtualized-lists": 58092,
+    "@babel/runtime": 559,
+    "memoize-one": 473
+  },
+  "usedGetters": [
+    "AppRegistry",
+    "Dimensions",
+    "I18nManager",
+    "Image",
+    "Platform",
+    "ReactNativeVersion",
+    "RefreshControl",
+    "ScrollView",
+    "StatusBar",
+    "StyleSheet",
+    "Text",
+    "TouchableHighlight",
+    "TurboModuleRegistry",
+    "View",
+    "findNodeHandle",
+    "useColorScheme",
+    "useWindowDimensions"
+  ],
+  "allReadsBy": [],
+  "removableBytes": 109183,
+  "removableByPackage": {
+    "react-native": 109183
+  },
+  "removable": [
+    {
+      "path": "node_modules/react-native/Libraries/Components/ActivityIndicator/ActivityIndicator.js",
+      "bytes": 1199
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/ActivityIndicator/ActivityIndicatorViewNativeComponent.js",
+      "bytes": 778
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/activityindicator/specs/ActivityIndicatorViewNativeComponent.js",
+      "bytes": 360
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/Button.js",
+      "bytes": 2253
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/Touchable/TouchableNativeFeedback.js",
+      "bytes": 5099
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/Touchable/TouchableOpacity.js",
+      "bytes": 5547
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/DrawerAndroid/DrawerLayoutAndroid.ios.js",
+      "bytes": 160
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/DrawerAndroid/DrawerLayoutAndroidFallback.js",
+      "bytes": 1947
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/UnimplementedViews/UnimplementedView.js",
+      "bytes": 1226
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Image/ImageBackground.js",
+      "bytes": 1729
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/TextInput/InputAccessoryView.js",
+      "bytes": 947
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/SafeAreaView/SafeAreaView.js",
+      "bytes": 548
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/SafeAreaView/RCTSafeAreaViewNativeComponent.js",
+      "bytes": 778
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/safeareaview/specs/RCTSafeAreaViewNativeComponent.js",
+      "bytes": 273
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/TextInput/RCTInputAccessoryViewNativeComponent.js",
+      "bytes": 778
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/inputaccessoryview/specs/RCTInputAccessoryViewNativeComponent.js",
+      "bytes": 329
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/Keyboard/KeyboardAvoidingView.js",
+      "bytes": 4095
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/AccessibilityInfo/AccessibilityInfo.js",
+      "bytes": 2870
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/AccessibilityInfo/NativeAccessibilityInfo.js",
+      "bytes": 778
+    },
+    {
+      "path": "node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeAccessibilityInfo.js",
+      "bytes": 530
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/LayoutConformance/LayoutConformance.js",
+      "bytes": 652
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/LayoutConformance/LayoutConformanceNativeComponent.js",
+      "bytes": 604
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Modal/Modal.js",
+      "bytes": 3183
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Modal/RCTModalHostViewNativeComponent.js",
+      "bytes": 732
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/modal/specs/RCTModalHostViewNativeComponent.js",
+      "bytes": 798
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/Pressable/Pressable.js",
+      "bytes": 3335
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/Pressable/useAndroidRippleForView.js",
+      "bytes": 668
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/ProgressBarAndroid/ProgressBarAndroid.js",
+      "bytes": 170
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/Switch/Switch.js",
+      "bytes": 1619
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/Switch/AndroidSwitchNativeComponent.js",
+      "bytes": 778
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/switch/specs/AndroidSwitchNativeComponent.js",
+      "bytes": 1175
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/Switch/SwitchNativeComponent.js",
+      "bytes": 778
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/switch/specs/SwitchNativeComponent.js",
+      "bytes": 1169
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/TextInput/TextInput.js",
+      "bytes": 7424
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/TextInput/RCTMultilineTextInputNativeComponent.js",
+      "bytes": 874
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/Touchable/TouchableWithoutFeedback.js",
+      "bytes": 2552
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Lists/VirtualizedList.js",
+      "bytes": 569
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Lists/VirtualizedSectionList.js",
+      "bytes": 576
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/virtualview/VirtualView.js",
+      "bytes": 2044
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/virtualview/VirtualViewExperimentalNativeComponent.js",
+      "bytes": 482
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/virtualview/VirtualViewNativeComponent.js",
+      "bytes": 458
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/virtualview/logger/VirtualViewLogger.js",
+      "bytes": 157
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/virtualcollection/Virtual.js",
+      "bytes": 375
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/virtualcollection/VirtualCollectionView.js",
+      "bytes": 1940
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/virtualcollection/column/VirtualColumn.js",
+      "bytes": 673
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/virtualcollection/column/VirtualColumnGenerator.js",
+      "bytes": 836
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/virtualcollection/FlingConstants.js",
+      "bytes": 410
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/virtualcollection/row/VirtualRow.js",
+      "bytes": 673
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/virtualcollection/row/VirtualRowGenerator.js",
+      "bytes": 829
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/virtualcollection/dom/getScrollParent.js",
+      "bytes": 398
+    },
+    {
+      "path": "node_modules/react-native/src/private/components/virtualcollection/dom/isScrollableNode.js",
+      "bytes": 137
+    },
+    {
+      "path": "node_modules/react-native/Libraries/ActionSheetIOS/ActionSheetIOS.js",
+      "bytes": 1781
+    },
+    {
+      "path": "node_modules/react-native/Libraries/ActionSheetIOS/NativeActionSheetManager.js",
+      "bytes": 732
+    },
+    {
+      "path": "node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeActionSheetManager.js",
+      "bytes": 531
+    },
+    {
+      "path": "node_modules/react-native/Libraries/AppState/AppState.js",
+      "bytes": 1192
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Utilities/logError.js",
+      "bytes": 280
+    },
+    {
+      "path": "node_modules/react-native/Libraries/AppState/NativeAppState.js",
+      "bytes": 732
+    },
+    {
+      "path": "node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeAppState.js",
+      "bytes": 530
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/Clipboard/Clipboard.js",
+      "bytes": 212
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/Clipboard/NativeClipboard.js",
+      "bytes": 778
+    },
+    {
+      "path": "node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeClipboard.js",
+      "bytes": 531
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Utilities/DeviceInfo.js",
+      "bytes": 147
+    },
+    {
+      "path": "node_modules/react-native/src/private/devsupport/devmenu/DevMenu.js",
+      "bytes": 150
+    },
+    {
+      "path": "node_modules/react-native/src/private/devsupport/devmenu/specs/NativeDevMenu.js",
+      "bytes": 529
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Utilities/DevSettings.js",
+      "bytes": 212
+    },
+    {
+      "path": "node_modules/react-native/Libraries/NativeModules/specs/NativeDevSettings.js",
+      "bytes": 732
+    },
+    {
+      "path": "node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeDevSettings.js",
+      "bytes": 533
+    },
+    {
+      "path": "node_modules/react-native/Libraries/StyleSheet/PlatformColorValueTypesIOS.ios.js",
+      "bytes": 263
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Linking/Linking.js",
+      "bytes": 1408
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Linking/NativeIntentAndroid.js",
+      "bytes": 732
+    },
+    {
+      "path": "node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeIntentAndroid.js",
+      "bytes": 526
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Linking/NativeLinkingManager.js",
+      "bytes": 732
+    },
+    {
+      "path": "node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeLinkingManager.js",
+      "bytes": 527
+    },
+    {
+      "path": "node_modules/react-native/Libraries/LogBox/LogBox.js",
+      "bytes": 702
+    },
+    {
+      "path": "node_modules/react-native/src/private/utilities/toExtendedError.js",
+      "bytes": 156
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Interaction/PanResponder.js",
+      "bytes": 2818
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Interaction/TouchHistoryMath.js",
+      "bytes": 1115
+    },
+    {
+      "path": "node_modules/react-native/Libraries/PermissionsAndroid/PermissionsAndroid.js",
+      "bytes": 3973
+    },
+    {
+      "path": "node_modules/react-native/Libraries/NativeModules/specs/NativeDialogManagerAndroid.js",
+      "bytes": 732
+    },
+    {
+      "path": "node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeDialogManagerAndroid.js",
+      "bytes": 533
+    },
+    {
+      "path": "node_modules/react-native/Libraries/PermissionsAndroid/NativePermissionsAndroid.js",
+      "bytes": 732
+    },
+    {
+      "path": "node_modules/react-native/src/private/specs_DEPRECATED/modules/NativePermissionsAndroid.js",
+      "bytes": 531
+    },
+    {
+      "path": "node_modules/react-native/Libraries/PushNotificationIOS/PushNotificationIOS.js",
+      "bytes": 5292
+    },
+    {
+      "path": "node_modules/react-native/Libraries/PushNotificationIOS/NativePushNotificationManagerIOS.js",
+      "bytes": 732
+    },
+    {
+      "path": "node_modules/react-native/src/private/specs_DEPRECATED/modules/NativePushNotificationManagerIOS.js",
+      "bytes": 536
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Settings/Settings.ios.js",
+      "bytes": 815
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Settings/NativeSettingsManager.js",
+      "bytes": 732
+    },
+    {
+      "path": "node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeSettingsManager.js",
+      "bytes": 537
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Share/Share.js",
+      "bytes": 1252
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Share/NativeShareModule.js",
+      "bytes": 732
+    },
+    {
+      "path": "node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeShareModule.js",
+      "bytes": 524
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/ToastAndroid/ToastAndroid.ios.js",
+      "bytes": 147
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Components/ToastAndroid/ToastAndroidFallback.js",
+      "bytes": 459
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Animated/useAnimatedValue.js",
+      "bytes": 241
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Animated/useAnimatedValueXY.js",
+      "bytes": 243
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Animated/useAnimatedColor.js",
+      "bytes": 241
+    },
+    {
+      "path": "node_modules/react-native/Libraries/UTFSequence.js",
+      "bytes": 441
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Vibration/Vibration.js",
+      "bytes": 622
+    },
+    {
+      "path": "node_modules/react-native/Libraries/Vibration/NativeVibration.js",
+      "bytes": 732
+    },
+    {
+      "path": "node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeVibration.js",
+      "bytes": 531
+    }
+  ],
+  "marginal": [
+    {
+      "getter": "Button",
+      "bytes": 229915
+    },
+    {
+      "getter": "Modal",
+      "bytes": 223589
+    },
+    {
+      "getter": "TouchableOpacity",
+      "bytes": 222563
+    },
+    {
+      "getter": "useAnimatedValueXY",
+      "bytes": 217259
+    },
+    {
+      "getter": "useAnimatedValue",
+      "bytes": 217257
+    },
+    {
+      "getter": "useAnimatedColor",
+      "bytes": 217257
+    },
+    {
+      "getter": "ScrollView",
+      "bytes": 217016
+    },
+    {
+      "getter": "Animated",
+      "bytes": 217016
+    },
+    {
+      "getter": "FlatList",
+      "bytes": 64984
+    },
+    {
+      "getter": "SectionList",
+      "bytes": 60293
+    },
+    {
+      "getter": "VirtualizedSectionList",
+      "bytes": 58668
+    },
+    {
+      "getter": "VirtualizedList",
+      "bytes": 58661
+    },
+    {
+      "getter": "TextInput",
+      "bytes": 27406
+    },
+    {
+      "getter": "Text",
+      "bytes": 18090
+    },
+    {
+      "getter": "TouchableHighlight",
+      "bytes": 16735
+    },
+    {
+      "getter": "Pressable",
+      "bytes": 16223
+    },
+    {
+      "getter": "TouchableNativeFeedback",
+      "bytes": 15882
+    },
+    {
+      "getter": "TouchableWithoutFeedback",
+      "bytes": 13754
+    },
+    {
+      "getter": "KeyboardAvoidingView",
+      "bytes": 13047
+    },
+    {
+      "getter": "ImageBackground",
+      "bytes": 11960
+    },
+    {
+      "getter": "usePressability",
+      "bytes": 11202
+    },
+    {
+      "getter": "Image",
+      "bytes": 10231
+    },
+    {
+      "getter": "StatusBar",
+      "bytes": 7961
+    },
+    {
+      "getter": "unstable_VirtualColumn",
+      "bytes": 7000
+    },
+    {
+      "getter": "unstable_VirtualRow",
+      "bytes": 6993
+    },
+    {
+      "getter": "PermissionsAndroid",
+      "bytes": 6910
+    },
+    {
+      "getter": "PushNotificationIOS",
+      "bytes": 6560
+    },
+    {
+      "getter": "Switch",
+      "bytes": 6537
+    },
+    {
+      "getter": "RefreshControl",
+      "bytes": 5528
+    },
+    {
+      "getter": "unstable_createVirtualCollectionView",
+      "bytes": 5081
+    },
+    {
+      "getter": "Keyboard",
+      "bytes": 4365
+    },
+    {
+      "getter": "AccessibilityInfo",
+      "bytes": 4178
+    },
+    {
+      "getter": "InputAccessoryView",
+      "bytes": 4147
+    },
+    {
+      "getter": "PanResponder",
+      "bytes": 3933
+    },
+    {
+      "getter": "Linking",
+      "bytes": 3925
+    },
+    {
+      "getter": "Share",
+      "bytes": 3771
+    },
+    {
+      "getter": "DrawerLayoutAndroid",
+      "bytes": 3333
+    },
+    {
+      "getter": "unstable_VirtualView",
+      "bytes": 3141
+    },
+    {
+      "getter": "VirtualViewMode",
+      "bytes": 3141
+    },
+    {
+      "getter": "ActionSheetIOS",
+      "bytes": 3044
+    },
+    {
+      "getter": "AppState",
+      "bytes": 2734
+    },
+    {
+      "getter": "ActivityIndicator",
+      "bytes": 2337
+    },
+    {
+      "getter": "Settings",
+      "bytes": 2084
+    },
+    {
+      "getter": "Vibration",
+      "bytes": 1885
+    },
+    {
+      "getter": "Easing",
+      "bytes": 1869
+    },
+    {
+      "getter": "I18nManager",
+      "bytes": 1860
+    },
+    {
+      "getter": "LayoutAnimation",
+      "bytes": 1825
+    },
+    {
+      "getter": "useColorScheme",
+      "bytes": 1824
+    },
+    {
+      "getter": "SafeAreaView",
+      "bytes": 1599
+    },
+    {
+      "getter": "Appearance",
+      "bytes": 1570
+    },
+    {
+      "getter": "Clipboard",
+      "bytes": 1521
+    },
+    {
+      "getter": "DevSettings",
+      "bytes": 1477
+    },
+    {
+      "getter": "ProgressBarAndroid",
+      "bytes": 1396
+    },
+    {
+      "getter": "experimental_LayoutConformance",
+      "bytes": 1256
+    },
+    {
+      "getter": "unstable_VirtualColumnGenerator",
+      "bytes": 1246
+    },
+    {
+      "getter": "unstable_NativeText",
+      "bytes": 1152
+    },
+    {
+      "getter": "LogBox",
+      "bytes": 858
+    },
+    {
+      "getter": "DevMenu",
+      "bytes": 679
+    },
+    {
+      "getter": "ToastAndroid",
+      "bytes": 606
+    },
+    {
+      "getter": "unstable_getScrollParent",
+      "bytes": 535
+    },
+    {
+      "getter": "ReactNativeVersion",
+      "bytes": 511
+    },
+    {
+      "getter": "useWindowDimensions",
+      "bytes": 494
+    },
+    {
+      "getter": "UTFSequence",
+      "bytes": 441
+    },
+    {
+      "getter": "unstable_DEFAULT_INITIAL_NUM_TO_RENDER",
+      "bytes": 410
+    },
+    {
+      "getter": "unstable_VirtualArray",
+      "bytes": 375
+    },
+    {
+      "getter": "DynamicColorIOS",
+      "bytes": 263
+    },
+    {
+      "getter": "DeviceInfo",
+      "bytes": 147
+    },
+    {
+      "getter": "EventEmitter",
+      "bytes": 0
+    },
+    {
+      "getter": "unstable_NativeView",
+      "bytes": 0
+    },
+    {
+      "getter": "unstable_TextAncestorContext",
+      "bytes": 0
+    },
+    {
+      "getter": "View",
+      "bytes": 0
+    },
+    {
+      "getter": "Alert",
+      "bytes": 0
+    },
+    {
+      "getter": "AppRegistry",
+      "bytes": 0
+    },
+    {
+      "getter": "AssetRegistry",
+      "bytes": 0
+    },
+    {
+      "getter": "BackHandler",
+      "bytes": 0
+    },
+    {
+      "getter": "codegenNativeCommands",
+      "bytes": 0
+    },
+    {
+      "getter": "codegenNativeComponent",
+      "bytes": 0
+    },
+    {
+      "getter": "DeviceEventEmitter",
+      "bytes": 0
+    },
+    {
+      "getter": "Dimensions",
+      "bytes": 0
+    },
+    {
+      "getter": "findNodeHandle",
+      "bytes": 0
+    },
+    {
+      "getter": "NativeAppEventEmitter",
+      "bytes": 0
+    },
+    {
+      "getter": "NativeComponentRegistry",
+      "bytes": 0
+    },
+    {
+      "getter": "NativeEventEmitter",
+      "bytes": 0
+    },
+    {
+      "getter": "NativeModules",
+      "bytes": 0
+    },
+    {
+      "getter": "Networking",
+      "bytes": 0
+    },
+    {
+      "getter": "PixelRatio",
+      "bytes": 0
+    },
+    {
+      "getter": "Platform",
+      "bytes": 0
+    },
+    {
+      "getter": "PlatformColor",
+      "bytes": 0
+    },
+    {
+      "getter": "processColor",
+      "bytes": 0
+    },
+    {
+      "getter": "registerCallableModule",
+      "bytes": 0
+    },
+    {
+      "getter": "requireNativeComponent",
+      "bytes": 0
+    },
+    {
+      "getter": "RootTagContext",
+      "bytes": 0
+    },
+    {
+      "getter": "StyleSheet",
+      "bytes": 0
+    },
+    {
+      "getter": "Systrace",
+      "bytes": 0
+    },
+    {
+      "getter": "TurboModuleRegistry",
+      "bytes": 0
+    },
+    {
+      "getter": "UIManager",
+      "bytes": 0
+    }
+  ]
+}

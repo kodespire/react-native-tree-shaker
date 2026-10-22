@@ -1,0 +1,16 @@
+{
+  "name": "@metro-tree-shaker/benchmarks",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Phase 0 harness: builds apps with each bundler variant and compares bundle sizes.",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@metro-tree-shaker/shake-report": "*"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.29.0"
+  }
+}

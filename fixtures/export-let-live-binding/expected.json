@@ -1,0 +1,24 @@
+{
+  "description": "A mutable `export let`: writes to an unread export go, but the code that makes them keeps running, and the bundle prints what it printed before.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": {
+    "kept": [
+      "index.js",
+      "counter.js"
+    ],
+    "removed": []
+  },
+  "exports": {
+    "counter.js": {
+      "kept": [
+        "count",
+        "increment"
+      ],
+      "removed": [
+        "unusedCount"
+      ]
+    }
+  },
+  "notes": "Babel's CommonJS output keeps the binding live (prints 2). Metro's own import support copies the value at import time (prints 0), with or without shaking."
+}

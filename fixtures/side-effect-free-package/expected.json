@@ -1,0 +1,7 @@
+{
+  "description": "A package that declares sideEffects: false is dropped entirely when none of its exports are used.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js"], "removed": ["node_modules/pure-lib/index.js"] },
+  "exports": {}
+}

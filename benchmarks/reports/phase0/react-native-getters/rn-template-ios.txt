@@ -1,0 +1,41 @@
+Why virtualized-lists/index.js is kept:
+  index.js --(react-native)-->
+  node_modules/react-native/index.js --(getter ScrollView)-->
+  node_modules/react-native/Libraries/Components/ScrollView/ScrollView.js --(./ScrollViewStickyHeader)-->
+  node_modules/react-native/Libraries/Components/ScrollView/ScrollViewStickyHeader.js --(../../Animated/Animated)-->
+  node_modules/react-native/Libraries/Animated/Animated.js --(./AnimatedExports)-->
+  node_modules/react-native/Libraries/Animated/AnimatedExports.js --(./components/AnimatedFlatList)-->
+  node_modules/react-native/Libraries/Animated/components/AnimatedFlatList.js --(../../Lists/FlatList)-->
+  node_modules/react-native/Libraries/Lists/FlatList.js --(@react-native/virtualized-lists)-->
+  node_modules/@react-native/virtualized-lists/index.js
+
+Modules: 534, module code 845.5 KiB (react-native package: 722.6 KiB).
+Getters on react-native's entry: 96; dependencies classified: 97 (2 top-level).
+
+Reachable with every getter edge cut (always kept): 504.9 KiB, 309 modules.
+Ceiling, reachable only through getters: 340.6 KiB (40.3% of module code), 225 modules.
+  react-native: 282.8 KiB
+  @react-native/virtualized-lists: 56.7 KiB
+  @babel/runtime: 0.5 KiB
+  memoize-one: 0.5 KiB
+
+Getters read by reachable code (heuristic): 17 of 96: AppRegistry, Dimensions, I18nManager, Image, Platform, ReactNativeVersion, RefreshControl, ScrollView, StatusBar, StyleSheet, Text, TouchableHighlight, TurboModuleRegistry, View, findNodeHandle, useColorScheme, useWindowDimensions
+No file uses the module object in a way we can't follow.
+Removable if unread getters were dropped (heuristic): 106.6 KiB (12.6% of module code, 14.8% of react-native), 100 modules.
+
+Most expensive getters (bytes reachable only through that getter, overlaps counted for each):
+  Button: 224.5 KiB
+  Modal: 218.3 KiB
+  TouchableOpacity: 217.3 KiB
+  useAnimatedValueXY: 212.2 KiB
+  useAnimatedValue: 212.2 KiB
+  useAnimatedColor: 212.2 KiB
+  ScrollView (read): 211.9 KiB
+  Animated: 211.9 KiB
+  FlatList: 63.5 KiB
+  SectionList: 58.9 KiB
+  VirtualizedSectionList: 57.3 KiB
+  VirtualizedList: 57.3 KiB
+  TextInput: 26.8 KiB
+  Text (read): 17.7 KiB
+  TouchableHighlight (read): 16.3 KiB

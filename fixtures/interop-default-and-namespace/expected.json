@@ -1,0 +1,13 @@
+{
+  "description": "A default import of CommonJS is the whole exports object; of ESM, only `default`. A namespace import of CommonJS copies every property, so it can read more than it uses.",
+  "phase": 3,
+  "entry": "index.js",
+  "modules": { "kept": ["index.js", "legacy.js", "legacy-ns.js", "esm.js"], "removed": [] },
+  "exports": {
+    "legacy.js": { "kept": ["a"], "removed": ["b"] },
+    "legacy-ns.js": { "kept": ["x"], "removed": [] },
+    "esm.js": { "kept": ["default"], "removed": ["unused"] }
+  },
+  "output": ["a x esm default"],
+  "notes": "legacy-ns.js's y is kept with Metro's import support (importAll copies every property) and removed with Babel (interopRequireWildcard's copy is only read for x)."
+}

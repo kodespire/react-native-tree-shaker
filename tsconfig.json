@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/side-effects-db" },
+    { "path": "packages/shake-report" },
+    { "path": "packages/babel-plugin-optimize-barrels" },
+    { "path": "packages/metro-tree-shaker" },
+    { "path": "benchmarks" }
+  ]
+}
